@@ -90,7 +90,7 @@ delicious_count: 3
 
 # Disqus Comments
 disqus_show_comment_count: true
-disqus_short_name: false
+disqus_short_name: bverbeken
 
 # Google Analytics
 google_analytics_tracking_id: UA-30542473-1
