@@ -6,7 +6,7 @@ sharing: false
 footer: true
 ---
 
-Hi, I'm Ben Verbeken, a software developer living in Tienen, Belgium. I like Tienen, thank you very much. 
+Hi, I'm Ben Verbeken, an agile software developer living in Tienen, clean code lover, <a href="http://www.playframework.org">PlayFramework</a> addict, <a href="http://play-be.org">Belgian Playframework User Group</a> co-founder. 
 
 
 Things I like
