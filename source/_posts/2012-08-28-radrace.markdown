@@ -1,0 +1,37 @@
+---
+layout: post
+title: "RAD race"
+date: 2012-08-28 13:52
+comments: true
+categories: 
+- Play!
+- RAD
+published: false
+---
+
+
+I recently decided to participate in a RAD race, which will be held on 9 and 10 November.     
+'Rapid Application Development' is an old term whose meaning changed a couple of times over the course of history (and even brings back memories of some IBM products *shivers*). This particular RAD race is celebrating it's 15th birthday this year, nuff said.    
+But the fact that people still organise these events shows that the inital problem remains: how can we build software faster, cheaper and better. 
+My personal motivations to participate are that I like writing code, I like some good competition, and I want to show that <a href="http://www.playframework.org">playframework</a> (more on that in future blog posts) is the best way to build webapps in the Java world, if not to the rest of the world, at least to myself.
+
+I'm wondering: how does one prepare for such an event? 
+
+Technology-wise, there are no open questions. We'll be building the app using PlayFramework, Java, Twitter Bootstrap, JQuery. We'll be using Git for version management, and probably eclipse and windows. I'm still in negotiation with my teammate about the latter two and if you ask him, we're only negotiating about Git and perhaps a client-side mvc framework like ember.js.     
+In short: no question there ;) 
+
+The real problem is: does the fact that it's a game change the rules? Put differently: does it pay off to be doing things differently than in a real real-life situation, by focusing on the game, rather than on building the software itself? 
+
+As a student, I participated in stock-exchange simulation games. The winners always were the ones who put all their money in one basket without diversification. Sure, for every winner, there were tens of people who used the same strategy and didn't win, but neither did the ones who did build a life-like diverse portfolio. 
+The point is: every game rule system has flaws, and experienced players always find the holes. Should we be looking for these flaws? 
+
+In concreto, I'm talking about the following; I'm used to agile software development and TDD (test driven development, though I like to call it test driven design). One of the questions that popped up was whether or not we would be writing tests all the time, pair programming, 
+
+To win, probably. But by doing so, we'll take out much of the fun of participating in the competition. And, if we do win by making use of the holes in the rules, there will always be a 'yes but'.
+
+I won't give in to the postmodern idea that agile software development is just a phase, a belief, some even say religion. So I'm quite sure we will be doing TDD, that we'll have a kanban board, and that we'llbe pair-programming more often than not. 
+
+
+******************************
+There's no secret; there's also nothing like 'Rapid Application Development'. Not IRL there isn't. 
+Fast, cheap, good: pick any two. What should we pick for the RAD race? 
