@@ -14,15 +14,38 @@ I just decided to participate in a <a href="http://www.radrace.org/en/index.html
 'Rapid Application Development' is an old term whose meaning changed a couple of times over the course of history (and even brings back memories of some IBM products *shivers*). This particular RAD race is being organized for the 15th time this year, nuff said.    
 But the fact that people still organise these events shows that we keep looking for better, cheaper, faster ways of building software.   
 
-My personal motivations to participate are that I like writing code, I like some good competition, and I want to show that <a href="http://www.playframework.org">playframework</a> (more on that in future blog posts) is the best way to build webapps in the Java world, if not to the rest of the world, at least to myself.
+The Problem
+-----------
 
-So technology-wise, there are no open questions. We'll be building the app using PlayFramework, Java, Twitter Bootstrap, JQuery. We'll be using Git for version management, and probably eclipse and windows. I'm still in negotiation with my teammate about the latter two and if you ask him, we're only negotiating about Git and perhaps a client-side mvc framework like ember.js.     
+On the technology side everything is clear. We'll be building the app using PlayFramework (more on that in future posts), Java, Twitter Bootstrap, JQuery. We'll be using Git for version management, and probably eclipse and windows. I'm still in negotiation with my teammate about the latter two and if you ask him, we're only negotiating about Git and perhaps a client-side mvc framework like ember.js.     
 In short: no question there ;) 
 
-The real problem is: does the fact that it's a game change the rules? Put differently: does it pay off to be doing things differently than in a real real-life situation, by focusing on the game rules, rather than on building the software itself? 
+The real problem is this: what about testing?    
+How many tests should we write? What type of tests should we write? What not? Should we be RAD-racing TestDrivenly (tm) at all? 
 
-As a student, I participated in stock-exchange simulation games. The winners always were the ones who put all their money in one basket without diversification. Sure, for every winner, there were tens of people who used the same strategy and didn't win, but neither did the ones who did build a life-like diverse portfolio. 
-The point is: every game rule system has flaws, and experienced players always find the holes. Should we be looking for these flaws? 
+The funny thing about simulation games ...
+-------------------------------------------
+... is that every simulation game rule system has its flaws. And experienced players have no trouble finding them. 
+
+When I was studying economics, I regularily participated in stock-exchange simulation games. That is, until I got annoyed enough by the fact that the winner was always the one who put all of his play money in one basket. Sure, for every winner, there were tens of people who used the same strategy and didn't win, but neither did the ones who did build a life-like diversified portfolio. 
+
+
+
+Conclusion
+----------
+
+I won't give in to the postmodern idea that agile software development is just a phase, a belief, some even say religion, and that it's just a matter of opinion.      
+So I'm quite sure we will be doing TDD, that we'll have a kanban board, and that we'llbe pair-programming more often than not. Even if it proves to be sub-optimal for a two-day project. 
+
+*******************************************************************************************$$
+
+The real problem is: does the fact that it's a game change the rules? Or, put differently: does it pay off to be doing things differently than in a real real-life situation, by focusing on the game rules, rather than on building the software itself? 
+
+ 
+
+I can hear you ask: "Then why do you participate?"
+My personal motivations to participate are that I like writing code, I like some good competition, and I want to show that <a href="http://www.playframework.org">playframework</a> (more on that in future blog posts) is the best way to build webapps in the Java world, if not to the rest of the world, at least to myself.
+
 
 *******************************
 
@@ -30,7 +53,6 @@ In concreto, I'm talking about the following; I'm used to agile software develop
 
 To win, probably. But by doing so, we'll take out much of the fun of participating in the competition. And, if we do win by making use of the holes in the rules, there will always be a 'yes but'.
 
-I won't give in to the postmodern idea that agile software development is just a phase, a belief, some even say religion. So I'm quite sure we will be doing TDD, that we'll have a kanban board, and that we'llbe pair-programming more often than not. 
 
 
 ******************************
