@@ -4,7 +4,7 @@
   <title><![CDATA[Ben Verbeken]]></title>
   <link href="http://ostia.be/atom.xml" rel="self"/>
   <link href="http://ostia.be/"/>
-  <updated>2012-08-28T10:49:47+02:00</updated>
+  <updated>2012-08-28T13:47:35+02:00</updated>
   <id>http://ostia.be/</id>
   <author>
     <name><![CDATA[Ben Verbeken]]></name>
@@ -12,5 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[First!]]></title>
+    <link href="http://ostia.be/blog/2012/08/28/first/"/>
+    <updated>2012-08-28T13:43:00+02:00</updated>
+    <id>http://ostia.be/blog/2012/08/28/first</id>
+    <content type="html"><![CDATA[<pre><code>println("Hello World!")
+</code></pre>
+
+<p>First blog post, yay!</p>
+]]></content>
+  </entry>
   
 </feed>

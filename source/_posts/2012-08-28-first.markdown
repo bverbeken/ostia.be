@@ -1,0 +1,11 @@
+---
+layout: post
+title: "First!"
+date: 2012-08-28 13:43
+comments: true
+categories: 
+---
+
+	println("Hello World!")
+
+First blog post, yay!
