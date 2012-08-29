@@ -2,26 +2,30 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://ostia.be/blog/2012/08/28/first/</loc>
-        <lastmod>2012-08-29T22:54:03+02:00</lastmod>
+        <lastmod>2012-08-29T23:10:31+02:00</lastmod>
     </url>
     <url>
         <loc>http://ostia.be/blog/2012/08/29/radrace/</loc>
-        <lastmod>2012-08-29T22:54:03+02:00</lastmod>
+        <lastmod>2012-08-29T23:10:31+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ostia.be/blog/2012/08/29/totestornottotest/</loc>
+        <lastmod>2012-08-29T23:10:31+02:00</lastmod>
     </url>
     <url>
         <loc>http://ostia.be/</loc>
-        <lastmod>2012-08-29T22:54:03+02:00</lastmod>
+        <lastmod>2012-08-29T23:10:31+02:00</lastmod>
     </url>
     <url>
         <loc>http://ostia.be/blog/archives/</loc>
-        <lastmod>2012-08-29T22:54:03+02:00</lastmod>
+        <lastmod>2012-08-29T23:10:31+02:00</lastmod>
     </url>
     <url>
         <loc>http://ostia.be/about/</loc>
-        <lastmod>2012-08-29T22:54:03+02:00</lastmod>
+        <lastmod>2012-08-29T23:10:31+02:00</lastmod>
     </url>
     <url>
         <loc>http://ostia.be/projects/</loc>
-        <lastmod>2012-08-29T22:54:03+02:00</lastmod>
+        <lastmod>2012-08-29T23:10:31+02:00</lastmod>
     </url>
 </urlset>
