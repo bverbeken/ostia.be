@@ -9,3 +9,5 @@ categories:
 	println("Hello World!")
 
 First blog post, yay!
+
+Now with that out of the way, go ahead and read the second post. That'll be a more interesting, I promise. 
