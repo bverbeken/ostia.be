@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>To Test Or Not To Test - Ben Verbeken</title>
+  <meta name="author" content="Ben Verbeken">
+
+  
+  <meta name="description" content="I recently decided to participate in a RAD race, which will be held on 9 and 10 November. A RAD race is a competition in which teams (of two people &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://ostia.be/blog/2012/08/29/radrace/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Ben Verbeken" type="application/atom+xml">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-30542473-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <div id="logo">
+  	<div id="logoLeft">[</div>
+  	<div id="logoText"><img src="/favicon.png" style="position:relative; top:-4px;"/></div>
+  	<div id="logoRight">]</div>
+  	<div class="clear"></div>
+  </div>
+  <h1><a href="/">Ben Verbeken</a></h1>
+  
+  <div class="clear"></div>
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:ostia.be" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li> 
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      
+        <h1 class="entry-title">To Test or Not to Test</h1>
+      
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-29T20:52:00+02:00" pubdate data-updated="true">Aug 29<span>th</span>, 2012</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I recently decided to participate in a <a href="http://www.radrace.org/en/index.html">RAD race</a>, which will be held on 9 and 10 November. A RAD race is a competition in which teams (of two people in this case) build a real-life application in two days, using the language and tools of their choice.    <br/>
+&#8216;Rapid Application Development&#8217; is an old term whose meaning changed a couple of times over the course of history and even brings back memories of some IBM products *shivers*. But the fact that people still organise these events shows that we keep looking for better, cheaper, faster ways of building software. This  particular RAD race is being held for the 15th time, nuff said.</p>
+
+<h2>The Problem</h2>
+
+<p>On the technology side everything is clear. We&#8217;ll be building the app using <a href="http://www.playframework.org">PlayFramework</a> - only the single best way to build java web apps -, Java, Twitter Bootstrap, JQuery. We&#8217;ll be using Git for version management, and probably Eclipse on Windows. I&#8217;m still in negotiation with my teammate - let&#8217;s call him Matti - about the latter two. (If you ask him, we&#8217;re only negotiating about Git and perhaps a client-side mvc framework. In short: no question there ;-)).</p>
+
+<p>But right in the middle of the excitement Matti and I felt when we decided to enter the competition, a question popped up: what about <strong>testing</strong>?   <br/>
+What should we test? When should we be writing them? Should we be writing any tests at all?</p>
+
+<p>For any real project, the answer would be simple: we&#8217;d be writing tests for everything, and we&#8217;d be writing them first.
+But for the RAD race, things may be different.</p>
+
+<h2>The funny thing about simulation games</h2>
+
+<p>As a student, I regularily participated in stock exchange simulation games. That is, until I got annoyed enough by the fact that the winner was always the one who put all of his play money in one basket. Sure, for every winner, there were tens of people who used the same strategy and didn&#8217;t win, but neither did the ones who did build a life-like diversified portfolio.</p>
+
+<p>The point is that every simulation game rule system has its flaws, and that participants can exploit these flaws in order to win. In most stock exchange simulation games, the flaw is that there&#8217;s no real money,  so in order to maximize profit, you take as much (fake) risk as you can.  <br/>
+In a RAD race, the flaw is that your code won&#8217;t be running in production for years to come. There won&#8217;t be angry users asking for quick hacks on the phone, and no third or fourth generation junior developer who&#8217;s made responsible for maintaining the damned thing.</p>
+
+<h2>TDD vs Time</h2>
+
+<p>Does this mean that my teammate and I won&#8217;t be writing time-consuming tests during the RAD race? Hell no!</p>
+
+<p>First, saying that TDD is time-consuming is like saying your bookkeeper is costing you money. If it is, you&#8217;re doing it wrong. <br/>
+TDD is about producing time, namely time you won&#8217;t be spending looking for that annoying business blocking bug. Which will probably be during a weekend in your holiday or the one right before your code goes into production.  <br/>
+And if your code doesn&#8217;t go into production, the bug will definitely bite you during the demo you&#8217;re giving to one of the RAD race judges.</p>
+
+<p>Secondly, saying that writing tests is time-consuming implies a direct relationship between Lines Of Code and Time. Or that the productivity of a programmer can be measured in LOC, which is absurd, of course.</p>
+
+<p>So we won&#8217;t be writing legacy code (aka code without tests) from the start of the RAD race. We will, however, adapt ourselves to the situation, <em>in casu</em> a simulation game situation.  <br/>
+We&#8217;ll plan to TDD the business logic, especially if there&#8217;s complex algorithms involved. And we&#8217;ll have UI tests that cover at least every page in the app, but probably without checking every possible corner case.     <br/>
+But I&#8217;m still negotiating on that with Matti.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Ben Verbeken</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-29T20:52:00+02:00" pubdate data-updated="true">Aug 29<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/play-/'>Play!</a>, <a class='category' href='/blog/categories/rad/'>RAD</a>, <a class='category' href='/blog/categories/tdd/'>TDD</a>, <a class='category' href='/blog/categories/agile/'>agile</a>, <a class='category' href='/blog/categories/games/'>games</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ostia.be/blog/2012/08/29/radrace/" data-via="bverbeken" data-counturl="http://ostia.be/blog/2012/08/29/radrace/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left articlenav" href="/blog/2012/08/28/first/" title="Previous Post: First!">&laquo; First!</a>
+      
+      
+        <a class="basic-alignment right articlenav" href="/blog/2012/08/29/totestornottotest/" title="Next Post: To Test Or Not To Test">To Test Or Not To Test &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/08/29/totestornottotest/">To Test Or Not To Test</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/08/29/radrace/">To Test Or Not To Test</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/08/28/first/">First!</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/bverbeken">@bverbeken</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'bverbeken',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("bverbeken", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/bverbeken" class="twitter-follow-button" data-show-count="false">Follow @bverbeken</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Ben Verbeken -
+  <span class="credit">
+  	Powered by <a href="http://octopress.org">Octopress</a> with the <a href="http://melandri.net/">Darkstripes</a> theme
+  </span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'ostiabe';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://ostia.be/blog/2012/08/29/radrace/';
+        var disqus_url = 'http://ostia.be/blog/2012/08/29/radrace/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
