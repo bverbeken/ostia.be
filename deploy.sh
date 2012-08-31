@@ -2,5 +2,6 @@
 
 rake install['ostia']
 rake generate
-git commit -am "blog updated"
+git add .
+git commit -m "blog updated"
 git push heroku
