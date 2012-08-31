@@ -9,7 +9,8 @@
   <meta name="author" content="Ben Verbeken">
 
   
-  <meta name="description" content="Projects Litmus Litmus is a module for PlayFramework (1.2.x) that allows for more expressive functional testing. Recent Posts To Test Or Not To Test &hellip;">
+  <meta name="description" content="Projects Litmus Litmus is a module for PlayFramework (1.2.x) that allows for more expressive functional testing.
+More info can be found here: http &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -91,7 +92,68 @@
   
   <h2>Litmus</h2>
 
-<p>Litmus is a module for PlayFramework (1.2.x) that allows for more expressive functional testing.</p>
+<p>Litmus is a module for PlayFramework (1.2.x) that allows for more expressive functional testing.
+More info can be found here: <a href="http://github.com/bverbeken/litmus">http://github.com/bverbeken/litmus</a></p>
+
+<h4>Installation</h4>
+
+<p>First, add the following dependencies to your <code>dependencies.yml</code> file:</p>
+
+<pre><code>require:
+    ...
+    - litmus                    -&gt; litmus 0.2.3
+    # transitive dependencies for litmus        
+    - org.easytesting           -&gt; fest-assert     1.4
+    - org.jsoup                 -&gt; jsoup           1.6.1
+    - org.seleniumhq.selenium   -&gt; selenium-java   2.21.0
+    - com.google.guava          -&gt; guava 11.0.2
+    ...
+</code></pre>
+
+<p>Note: you also need to declare the transitive dependencies in your own <code>dependencies.yml</code> file! This is because of a known problem with the play 1.x dependency management, more info <a href="https://play.lighthouseapp.com/projects/57987-play-framework/tickets/1108-transitive-dependencies-not-work-with-modules-from-non-default-repository">here</a>.</p>
+
+<p>Secondly, you also need to declare the remote repository (<a href="http://ostia.be/repo/">http://ostia.be/repo/</a>)</p>
+
+<pre><code>repositories:
+    - ostia.be: 
+        type:       http
+        artifact:   "http://ostia.be/repo/[module]-[revision].zip"
+        contains:
+            - litmus  -&gt; *
+</code></pre>
+
+<p>After that, a simple</p>
+
+<pre><code>play deps --sync
+</code></pre>
+
+<p>is all you need to get you rolling.</p>
+
+<h2>Mockups</h2>
+
+<p>A PlayFramework module that allows you to put your html mockups (aka wireframes) in a specified folder under your Play project.</p>
+
+<h4>Installation</h4>
+
+<p>To install this module, you just need to add the following to your <code>/conf/dependencies.yml</code> file:</p>
+
+<pre><code>require: 
+    ...
+    - mockups -&gt; mockups 0.2
+    ...
+</code></pre>
+
+<p>And of course declare the remote repository</p>
+
+<pre><code>repositories:
+    - ostia.be: 
+        type:       http
+        artifact:   "http://ostia.be/repo/[module]-[revision].zip"
+        contains:
+            - mockups -&gt; *
+</code></pre>
+
+<p>Just do <code>play deps --sync</code> now, and start creating your mockups.</p>
 
   
     <footer>
