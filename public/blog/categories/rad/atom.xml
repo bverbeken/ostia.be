@@ -4,7 +4,7 @@
   <title><![CDATA[Category: RAD | Ben Verbeken]]></title>
   <link href="http://ostia.be/blog/categories/rad/atom.xml" rel="self"/>
   <link href="http://ostia.be/"/>
-  <updated>2012-09-03T08:53:55+02:00</updated>
+  <updated>2012-09-03T17:39:43+02:00</updated>
   <id>http://ostia.be/</id>
   <author>
     <name><![CDATA[Ben Verbeken]]></name>
@@ -18,7 +18,7 @@
     <link href="http://ostia.be/blog/2012/08/29/totestornottotest/"/>
     <updated>2012-08-29T23:04:00+02:00</updated>
     <id>http://ostia.be/blog/2012/08/29/totestornottotest</id>
-    <content type="html"><![CDATA[<p>I recently decided to participate in a <a href="http://www.radrace.org/en/index.html">RAD race</a>, which will be held on 9 and 10 November. A RAD race is a competition in which teams (of two people in this case) build a real-life application in two days, using the language and tools of their choice.    <br/>
+    <content type="html"><![CDATA[<p>I recently decided to participate in a <a href="http://www.radrace.org/en/index.html">RAD race</a>, which will be held on 9 and 10 November. A RAD race is a competition in which teams (of two people in this case) build a real-life application in two days, using the language and tools of their choice. <!-- more -->   <br/>
 'Rapid Application Development' is an old term whose meaning changed a couple of times over the course of history and even brings back memories of some IBM products *shivers*. But the fact that people still organise these events shows that we keep looking for better, cheaper, faster ways of building software. This  particular RAD race is being held for the 15th time, nuff said.</p>
 
 <h2>The Problem</h2>

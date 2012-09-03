@@ -11,8 +11,9 @@ categories:
 - games
 ---
 
-I recently decided to participate in a <a href="http://www.radrace.org/en/index.html">RAD race</a>, which will be held on 9 and 10 November. A RAD race is a competition in which teams (of two people in this case) build a real-life application in two days, using the language and tools of their choice.      
-'Rapid Application Development' is an old term whose meaning changed a couple of times over the course of history and even brings back memories of some IBM products \*shivers\*. But the fact that people still organise these events shows that we keep looking for better, cheaper, faster ways of building software. This  particular RAD race is being held for the 15th time, nuff said.    
+I recently decided to participate in a <a href="http://www.radrace.org/en/index.html">RAD race</a>, which will be held on 9 and 10 November. A RAD race is a competition in which teams (of two people in this case) build a real-life application in two days, using the language and tools of their choice. <!-- more -->     
+'Rapid Application Development' is an old term whose meaning changed a couple of times over the course of history and even brings back memories of some IBM products \*shivers\*. But the fact that people still organise these events shows that we keep looking for better, cheaper, faster ways of building software. This  particular RAD race is being held for the 15th time, nuff said.   
+
 
 The Problem
 -----------
