@@ -1,9 +1,12 @@
 ---
 layout: post
 title: "Extreme Programming Explained, without explaining"
-date: 2012-09-06 16:38
+date: 2012-09-10 20:38
 comments: true
 categories: 
+- XP
+- review
+- agile
 published: true
 --- 
 
@@ -103,7 +106,8 @@ Why is Taylorism important for software engineering? No one walks around a devel
 {% blockquote %}
 So the question, "Is my team extreme?" There isn't a binary answer.
 {% endblockquote %}
-And finally, not in the least: 
+
+And last but not least: 
 
 {% blockquote %}
 The key to XP is integrity, acting in harmony with my true values. 

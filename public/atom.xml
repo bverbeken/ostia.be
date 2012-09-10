@@ -4,7 +4,7 @@
   <title><![CDATA[Ben Verbeken]]></title>
   <link href="http://ostia.be/atom.xml" rel="self"/>
   <link href="http://ostia.be/"/>
-  <updated>2012-09-10T20:37:52+02:00</updated>
+  <updated>2012-09-10T20:40:28+02:00</updated>
   <id>http://ostia.be/</id>
   <author>
     <name><![CDATA[Ben Verbeken]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Extreme Programming Explained, without explaining]]></title>
-    <link href="http://ostia.be/blog/2012/09/06/xp-explained-without-explaining/"/>
-    <updated>2012-09-06T16:38:00+02:00</updated>
-    <id>http://ostia.be/blog/2012/09/06/xp-explained-without-explaining</id>
+    <link href="http://ostia.be/blog/2012/09/10/xp-explained-without-explaining/"/>
+    <updated>2012-09-10T20:38:00+02:00</updated>
+    <id>http://ostia.be/blog/2012/09/10/xp-explained-without-explaining</id>
     <content type="html"><![CDATA[<p>I&#8217;ve been reading &#8216;Extreme Programming Explained - Embrace Change&#8217;, by Kent Beck (<a href="http://twitter.com/kentbeck">@kentbeck</a>). If you&#8217;ve read it too, you&#8217;re probably thinking: &#8220;it&#8217;s an old book, you should&#8217;ve read it years ago&#8221;, and I agree. But if you didn&#8217;t I can only say: you should.</p>
 
 <p>Even if you&#8217;re working on a software development team but are no programmer; XP Explained does not contain any (as in &#8216;zero&#8217;) code samples, and it&#8217;s really about how to develop software as a team.</p>
@@ -111,7 +111,7 @@
 <blockquote><p>So the question, &#8220;Is my team extreme?&#8221; There isn&#8217;t a binary answer.</p></blockquote>
 
 
-<p>And finally, not in the least:</p>
+<p>And last but not least:</p>
 
 <blockquote><p>The key to XP is integrity, acting in harmony with my true values.</p></blockquote>
 
