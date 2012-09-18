@@ -6,7 +6,7 @@ sharing: false
 footer: true
 ---
 
-Hi, I'm Ben Verbeken, an agile software developer living in Tienen, clean code lover, <a href="http://www.playframework.org">PlayFramework</a> addict, <a href="http://play-be.org">Belgian Playframework User Group</a> co-founder. 
+Hi, I'm Ben Verbeken, an agile software developer living in Tienen (Belgium, Europe), clean code lover, <a href="http://www.playframework.org">PlayFramework</a> addict, <a href="http://play-be.org">Belgian Playframework User Group</a> co-founder. 
 
 
 Things I like
@@ -14,7 +14,7 @@ Things I like
 * simplicity above all
 * the freedom of being a freelancer
 * red-green-refactor
-* PlayFramework
+* [PlayFramework](http://www.playframework.org)
 * Brahms, Mendelssohn, Schubert
 * DRY and YAGNI
 * the <a href="http://www.agilemanifesto.org/">agile manifesto</a>
