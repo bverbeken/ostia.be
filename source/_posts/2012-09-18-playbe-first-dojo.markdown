@@ -1,15 +1,14 @@
 ---
 layoaut: post
-title: "Event: Play2 Dojo"
+title: "Announcement: Play2 Dojo"
 date: 2012-09-18 23:28
 comments: true
 categories: 
 - playbe
 - playframework
 - dojo
-published: true
+published: false
 ---
-
 
 Last year at Devoxx, I met Steve Chaloner ([@steve_objectify](https://twitter.com/steve_objectify)), a Welsh expat in Belgium, and the first guy I met who had been using [PlayFramework](http://www.playframework.org) professionally. Steve and his teammate managed to rewrite a struts 1 app that had been in development for some 4 years and that was ready for the bin. They used PlayFramework and rewrote the app in about a tenth of the original LOCs.    
 Steve is also the author of Deadbolt, a widely used authorization module for both Play 1 and 2.    
