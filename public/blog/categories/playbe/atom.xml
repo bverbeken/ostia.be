@@ -4,7 +4,7 @@
   <title><![CDATA[Category: playbe | Ben Verbeken]]></title>
   <link href="http://ostia.be/blog/categories/playbe/atom.xml" rel="self"/>
   <link href="http://ostia.be/"/>
-  <updated>2012-09-18T23:28:51+02:00</updated>
+  <updated>2012-09-19T06:44:50+02:00</updated>
   <id>http://ostia.be/</id>
   <author>
     <name><![CDATA[Ben Verbeken]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Event: Play2 Dojo]]></title>
+    <title type="html"><![CDATA[PlayBe Dojo: Play 2 & Java]]></title>
     <link href="http://ostia.be/blog/2012/09/18/playbe-first-dojo/"/>
     <updated>2012-09-18T23:28:00+02:00</updated>
     <id>http://ostia.be/blog/2012/09/18/playbe-first-dojo</id>
@@ -28,14 +28,17 @@ In short, it's the closest thing to PHP you can get as a java/JVM web dev, but w
 <p>However, being a fanboy is not much fun if you're the only one, even if you're two.
 So somewhere in spring - the season - Steve and I decided to get started with the <a href="http://www.play-be.org">Belgian Playframework User Group</a> (or <a href="https://twitter.com/#!/search/%23playbe">#playbe</a> for short). At this moment, the user group has about 30 members.</p>
 
-<p>Now, a couple of months and beer sessions later, we're very proud to announce PlayBe's first <em>real</em> event: a Play2 Coding Dojo. We'll build a cool web application in about 3 hours. It'll be something you can talk about at home, I promise. Maybe even use.</p>
+<p>Now, a couple of months and beer sessions later, we're very proud to announce PlayBe's first <em>real</em> event: a <strong>Play2 Coding Dojo</strong>.  <br/>
+A <a href="http://codingdojo.org">coding dojo</a> is a live coding event where everybody in the room is invited to participate. The format will be that of a <em>Randori Kata</em>, in which the group collectively builds an application, in our case using Play2 and Java.</p>
 
-<p>The Dojo takes place <strong>3 October, 2012 at 7pm</strong>, at the <strong> Cegeka Offices</strong> in <strong>Leuven (Belgium)</strong>.
-No PlayFramework experience is required, the only thing you should be familiar with is a keyboard and some Java. We won't be doing <del>any</del> Scala <del>at all</del>.</p>
+<p>What we'll be building is still a bit of a secret, but I promise it'll be something you can talk about at home, and maybe even use. <br/>
+Also, did I mention that there'll be food and drinks? (Thanks <a href="http://www.cegeka.be">Cegeka</a> for the hosting &amp; sponsoring!).</p>
 
-<p>Did I forget to mention that there'll be food and drinks? (Thanks <a href="http://www.cegeka.be">Cegeka</a> for the hosting &amp; sponsoring!).</p>
+<p>The Dojo takes place <strong>3 October, 2012 at 7pm</strong>, at the <strong>Cegeka Offices</strong> in <strong>Leuven (Belgium)</strong>.
+No PlayFramework experience is required, the only thing you should be familiar with is a keyboard and some Java. We won't be doing <del>any</del> Scala.
+Registration is required, but free.</p>
 
-<p>So, get over to <a href="http://www.meetup.com/play-be/events/78580712/">http://www.play-be.org</a> and register yourself for the dojo. You won't regret it.</p>
+<p>So, get over to <a href="http://www.meetup.com/play-be/events/78580712/">play-be.org</a> and register yourself for PlayBe's first dojo. You won't regret it.</p>
 ]]></content>
   </entry>
   

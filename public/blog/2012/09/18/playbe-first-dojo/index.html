@@ -1,4 +1,120 @@
-<p>Last year at Devoxx, I met Steve Chaloner (<a href="https://twitter.com/steve_objectify">@steve_objectify</a>), a Welsh expat in Belgium, and the first guy I met who had been using <a href="http://www.playframework.org">PlayFramework</a> professionally. Steve and his teammate managed to rewrite a struts 1 app that had been in development for some 4 years and that was ready for the bin. They used PlayFramework and rewrote the app in about a tenth of the original LOCs.  <br/>
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>PlayBe Dojo: Play 2 & Java - Ben Verbeken</title>
+  <meta name="author" content="Ben Verbeken">
+
+  
+  <meta name="description" content="Last year at Devoxx, I met Steve Chaloner (@steve_objectify), a Welsh expat in Belgium, and the first guy I met who had been using PlayFramework &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://ostia.be/blog/2012/09/18/playbe-first-dojo/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Ben Verbeken" type="application/atom+xml">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-30542473-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <div id="logo">
+  	<div id="logoLeft">[</div>
+  	<div id="logoText"><img src="/favicon.png" style="position:relative; top:-4px;"/></div>
+  	<div id="logoRight">]</div>
+  	<div class="clear"></div>
+  </div>
+  <h1><a href="/">Ben Verbeken</a></h1>
+  
+  <div class="clear"></div>
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:ostia.be" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li> 
+  <li><a href="/projects">Projects</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      
+        <h1 class="entry-title">PlayBe Dojo: Play 2 & Java</h1>
+      
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-18T23:28:00+02:00" pubdate data-updated="true">Sep 18<span>th</span>, 2012</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Last year at Devoxx, I met Steve Chaloner (<a href="https://twitter.com/steve_objectify">@steve_objectify</a>), a Welsh expat in Belgium, and the first guy I met who had been using <a href="http://www.playframework.org">PlayFramework</a> professionally. Steve and his teammate managed to rewrite a struts 1 app that had been in development for some 4 years and that was ready for the bin. They used PlayFramework and rewrote the app in about a tenth of the original LOCs.  <br/>
 Steve is also the author of Deadbolt, a widely used authorization module for both Play 1 and 2.</p>
 
 <p>For those who don&#8217;t know it: Play is a full-stack web framework for the JVM that was built from the ground up by web developers who were tired of the bloated enterprizeness of building web apps in java and decided to do something about it. It&#8217;s got strongly typed templates, asset compilation, full statelessness, <em>real</em> hot reloading (it&#8217;s stateless, duh), and it&#8217;s part of the <a href="http://typesafe.com/stack">typesafe stack</a> of which <a href="http://www.theserverside.com/feature/Disruptive-forces-in-Java-Is-Scala-the-new-Spring-framework">some say</a> it&#8217;s a <em>disruptive force</em>, like Spring used to be some time ago.   <br/>
@@ -8,11 +124,214 @@ In short, it&#8217;s the closest thing to PHP you can get as a java/JVM web dev,
 <p>However, being a fanboy is not much fun if you&#8217;re the only one, even if you&#8217;re two.
 So somewhere in spring - the season - Steve and I decided to get started with the <a href="http://www.play-be.org">Belgian Playframework User Group</a> (or <a href="https://twitter.com/#!/search/%23playbe">#playbe</a> for short). At this moment, the user group has about 30 members.</p>
 
-<p>Now, a couple of months and beer sessions later, we&#8217;re very proud to announce PlayBe&#8217;s first <em>real</em> event: a Play2 Coding Dojo. We&#8217;ll build a cool web application in about 3 hours. It&#8217;ll be something you can talk about at home, I promise. Maybe even use.</p>
+<p>Now, a couple of months and beer sessions later, we&#8217;re very proud to announce PlayBe&#8217;s first <em>real</em> event: a <strong>Play2 Coding Dojo</strong>.  <br/>
+A <a href="http://codingdojo.org">coding dojo</a> is a live coding event where everybody in the room is invited to participate. The format will be that of a <em>Randori Kata</em>, in which the group collectively builds an application, in our case using Play2 and Java.</p>
 
-<p>The Dojo takes place <strong>3 October, 2012 at 7pm</strong>, at the <strong> Cegeka Offices</strong> in <strong>Leuven (Belgium)</strong>.
-No PlayFramework experience is required, the only thing you should be familiar with is a keyboard and some Java. We won&#8217;t be doing <del>any</del> Scala <del>at all</del>.</p>
+<p>What we&#8217;ll be building is still a bit of a secret, but I promise it&#8217;ll be something you can talk about at home, and maybe even use. <br/>
+Also, did I mention that there&#8217;ll be food and drinks? (Thanks <a href="http://www.cegeka.be">Cegeka</a> for the hosting &amp; sponsoring!).</p>
 
-<p>Did I forget to mention that there&#8217;ll be food and drinks? (Thanks <a href="http://www.cegeka.be">Cegeka</a> for the hosting &amp; sponsoring!).</p>
+<p>The Dojo takes place <strong>3 October, 2012 at 7pm</strong>, at the <strong>Cegeka Offices</strong> in <strong>Leuven (Belgium)</strong>.
+No PlayFramework experience is required, the only thing you should be familiar with is a keyboard and some Java. We won&#8217;t be doing <del>any</del> Scala.
+Registration is required, but free.</p>
 
-<p>So, get over to <a href="http://www.meetup.com/play-be/events/78580712/">http://www.play-be.org</a> and register yourself for the dojo. You won&#8217;t regret it.</p>
+<p>So, get over to <a href="http://www.meetup.com/play-be/events/78580712/">play-be.org</a> and register yourself for PlayBe&#8217;s first dojo. You won&#8217;t regret it.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Ben Verbeken</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-18T23:28:00+02:00" pubdate data-updated="true">Sep 18<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/dojo/'>dojo</a>, <a class='category' href='/blog/categories/playbe/'>playbe</a>, <a class='category' href='/blog/categories/playframework/'>playframework</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ostia.be/blog/2012/09/18/playbe-first-dojo/" data-via="bverbeken" data-counturl="http://ostia.be/blog/2012/09/18/playbe-first-dojo/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left articlenav" href="/blog/2012/09/10/xp-explained-without-explaining/" title="Previous Post: Extreme Programming Explained, without explaining">&laquo; Extreme Programming Explained, without explaining</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/09/18/playbe-first-dojo/">PlayBe Dojo: Play 2 & Java</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/09/10/xp-explained-without-explaining/">Extreme Programming Explained, without explaining</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/08/29/totestornottotest/">To Test Or Not To Test</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/08/28/first/">First!</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/bverbeken">@bverbeken</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'bverbeken',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("bverbeken", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/bverbeken" class="twitter-follow-button" data-show-count="false">Follow @bverbeken</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Ben Verbeken -
+  <span class="credit">
+  	Powered by <a href="http://octopress.org">Octopress</a> with the <a href="http://melandri.net/">Darkstripes</a> theme
+  </span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'ostiabe';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://ostia.be/blog/2012/09/18/playbe-first-dojo/';
+        var disqus_url = 'http://ostia.be/blog/2012/09/18/playbe-first-dojo/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
