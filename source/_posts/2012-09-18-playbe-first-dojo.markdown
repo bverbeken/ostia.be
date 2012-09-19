@@ -29,6 +29,6 @@ Also, did I mention that there'll be food and drinks? (Thanks [Cegeka](http://ww
 
 The Dojo takes place **3 October, 2012 at 7pm**, at the **Cegeka Offices** in **Leuven (Belgium)**.
 No PlayFramework experience is required, the only thing you should be familiar with is a keyboard and some Java. We won't be doing ~~any~~ Scala. 
-Registration is required, but free.
+[Registration](http://www.meetup.com/play-be/events/78580712/) is required, but free. 
 
-So, get over to [play-be.org](http://www.meetup.com/play-be/events/78580712/) and register yourself for PlayBe's first dojo. You won't regret it. 
+Hope to see you there!
