@@ -11,20 +11,20 @@ categories:
 published: false
 ---
 
-I'm a fan of TDD. Developing test first makes it easy to think about what you want your code to do.Also, if done right, TDD results in a whole bunch of tests that act both as documentation and as safety net for refactoring.    
-Validation rules should be one of the easiest things to test, imho: either a domain object is valid or it is invalid for a reason.
+I like TDD. Developing test first makes it easy to think about what you want your code to do. Also, if done right, TDD results in a whole bunch of tests that act both as documentation and as safety net for refactoring.    
+Validation rules are amongst the easiest things to test, imho: either a domain object is valid or it is invalid for a reason.
 
-In this post I'll describe a simple pattern for validation testing that's easy to understand and that can be used regardless of the framework you're using.<!-- more -->
-I found it especially useful for testing Spring validators. 
+In this post I'll describe a simple pattern for validation testing that's easy to understand and that can be used regardless of the framework you're using.  
+
+<!-- more -->
 
 The Pattern
 ------------
-We'll need one test for every reason for which a model object can be invalid, plus one test for every possible valid state (most of the times this will be 1 test).
+We'll need one test for every reason for which a model object can be invalid, plus one test for every possible valid state (for most domain objects this will be 1 test).
 
 - write a method that constructs the most basic instance of your model instance that is valid. Call it `valid()`. 
 - write a test that verifies that the `valid()` method actually builds a valid object. 
-- Write a test for every validation rule, by first building a valid object (call `valid()`), and then change the valid object so that it becomes invalid because of the validation you're testing. 
-
+- Write a test for every validation rule, by first building a valid object (call `valid()`), and then change the valid object so that violates the validation rule you're testing. 
 
 An example 
 ----------------
@@ -33,12 +33,33 @@ First, let's start by defining a domain model class which we'll be validating.
 
 ``` java Car.java
 	public class Car {
-		
-		private Vendor vendor;		
+
+		@Required		
+		private Vendor vendor;	
 		private Set<Wheel> wheels; 
 		private Color color; 
 
-		/* accessors omitted */
+		/* getters and setters */
+
+	}
+```
+
+Please note that 
+
+``` java CarValidationTest.java 
+	public class CarValidationTest {
+
+		@Test
+		public void aValidCarIsValid(){
+			Car validCar = valid();
+			assertThat();
+		}
+
+		private Errors validate(Car car){
+			Errors errors = new BindException("car", car); 
+			validator.validate(car, errors); 
+			return errors; 
+		}
 
 	}
 ```
@@ -49,7 +70,7 @@ Even Better: Custom Matchers
 
 Even Betterer: Builder Pattern
 -----------------------------------
-If you're using the Builder Pattern (XXX Link?) for building your, you can move your `valid()` method there, and have 
+If you're using the Builder Pattern (XXX Link?) for building your domain objects, you can move your `valid()` method there, and have 
 
 Suppose we have a CarBuilder: 
 
