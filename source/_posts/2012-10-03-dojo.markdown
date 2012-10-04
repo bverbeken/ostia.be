@@ -1,0 +1,56 @@
+---
+layout: post
+title: "Dojo"
+date: 2012-10-03 13:43
+comments: true
+categories:
+- playbe
+- playframework
+- dojo
+published: false 
+---
+
+The  Belgian Playframework User Group held it's first coding event yesterday, and if you ask me, it went well. The ingrediënts: 17 people, a nice room, food and drinks (thank you Cegeka!), and Playframework of course.    
+
+<!-- more -->
+
+A Coding Dojo is an event where people gather to code and learn together. The goal of a dojo is exactly that: to code and learn, nothing more. The resulting application is not what it's about.   
+Ours was a XXX dojo, a special dojo format in w
+ 
+
+
+
+
+WHen I arrived at the Cegeka offices in the afternoon, the room was free, so I decided to get myself a seat and prepare some more.  
+
+Table placement
+--------------------
+
+The wireless keyboard thing worked. Also, the fact we were sitting around tables in a in a big U-shape clearly helped interaction. 
+
+Timing: 
+-----------
+If you do a dojo, timing is important. A very obvious thing only occurred to me during the dojo: 
+
+
+Keyboard
+-------------
+In a 'normal' XXX dojo, there's two people pair programing in front of the room on a laptop, while the rest of the participants follow on the big screen. Every x minutes, one of the pairs is swapped with someone from the audience, and at the end of the evening everybody should have coded at least once. 
+ 
+We did it slightly different. When I arrived at the Cegeka offices in the afternoon, the room was free so I put myself in a chair started hacking. I noticed that the wireless keyboard I brought actually worked if I moved to the back of the room. 
+
+The keyboard was passed along from left to right (or right to left, depending on your viewpoint). Result was that everything became very predictable: people at the end of the U knew they wouldn't have to code before some time, and the ones who coded in the beginning of the evening quickly knew their turn had passed.    
+Perhaps we need to make it a bit less predictable next time. 
+
+When doing a dojo, make sure the first person to code knows at least a bit about the technology. It's very hard for a complete newbie to just start working
+
+IDE war
+-------
+It's an eternal war, and it can't be won.
+Neither 
+
+I'm an IntelliJ fan, always been one, but I respect other people's choice (even if there really is no competition)
+
+
+Do mockups
+-----------
