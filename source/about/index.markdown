@@ -20,7 +20,7 @@ Things I like
 * Brahms, Mendelssohn, Schubert
 * DRY and YAGNI
 * the [agile manifesto](http://www.agilemanifesto.org)
-* my objects to be strongly typed
+* my objects to be statically typed
 * cool beer
 
 

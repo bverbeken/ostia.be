@@ -4,7 +4,7 @@
   <title><![CDATA[Category: playframework | Ostia]]></title>
   <link href="http://ostia.be/blog/categories/playframework/atom.xml" rel="self"/>
   <link href="http://ostia.be/"/>
-  <updated>2012-10-05T10:57:17+02:00</updated>
+  <updated>2012-10-05T17:24:56+02:00</updated>
   <id>http://ostia.be/</id>
   <author>
     <name><![CDATA[Ben Verbeken]]></name>
@@ -15,59 +15,61 @@
   
   <entry>
     <title type="html"><![CDATA[Dojo]]></title>
-    <link href="http://ostia.be/blog/2012/10/03/dojo/"/>
-    <updated>2012-10-03T13:43:00+02:00</updated>
-    <id>http://ostia.be/blog/2012/10/03/dojo</id>
-    <content type="html"><![CDATA[<p>The Belgian Playframework User Group held it's first coding event last wednesday: a Coding Dojo.   <br/>
-The ingrediënts: 17 nice people, a decent sized room, food and drinks (thank you <a href="http://www.cegeka.be">Cegeka</a>!), and Playframework of course.</p>
+    <link href="http://ostia.be/blog/2012/10/04/dojo/"/>
+    <updated>2012-10-04T13:43:00+02:00</updated>
+    <id>http://ostia.be/blog/2012/10/04/dojo</id>
+    <content type="html"><![CDATA[<p>The Belgian Playframework User Group held it's first coding event last Wednesday: a Coding Dojo.   <br/>
+The ingrediënts: 17 nice people, a decent sized room, food and drinks, and Playframework of course.</p>
 
-<p>A Coding Dojo is an event where people gather to code and learn together. The goal of a dojo is exactly that: to code and learn, nothing more. It's about the journey, not the destination.  <br/>
-Ours was a <em>Randori Kata</em>, a kind of dojo where the whole group works together to build an application in a couple of hours. We changed the format just a wee bit, but more on that later in this post.</p>
+<p>A <a href="http://www.codingdojo.org">Coding Dojo</a> is an event where people gather to code and learn together. The goal of a dojo is exactly that: to code and learn, nothing more. It's about the journey, not the destination.   <br/>
+Ours was a <em>Randori Kata</em>, a kind of dojo where the whole group works together to build an application in a couple of hours, by pair programming on stage. We changed that format just a wee bit, more on that further down in this post.</p>
 
 <!-- more -->
 
 
 <h2>The Application</h2>
 
-<p>The application we would build is QuickQuizz, a quiz engine for twitter. The idea is simple: Quickquizz allows quizmasters to write questions and the expected answer, Quickquizz tweets the questions on a special <a href="http://twitter.com/quickquizz">@quickquizz</a> account, and people can answer these questions by replying to the tweet. Quickquizz then fetches the answers, scores them and shows an overview of all participants and their scores on a simple overview page.</p>
+<p>The application we built is called QuickQuizz, a quiz engine for Twitter. The idea is simple: Quickquizz allows quizmasters to write questions and the expected answer. It tweets the questions on a special <a href="http://twitter.com/quickquizz">@quickquizz</a> account, and people can answer these questions by replying to the tweet. Quickquizz then fetches the answers (asynchronously, using <a href="http://akka.io">Akka</a>), scores them and shows an overview of all quizzers and their scores on a simple overview page.</p>
 
-<p>We managed to get most of this done on Wednesday, in about three hours (break &amp; startup included). The resulting code is on github (<a href="http://github.com/playbe/quickquizz-dojo">http://github.com/playbe/quickquizz-dojo</a>).   <br/>
-Remember, if you decide to take a peek at the code, that it's all about the journey, not the destination :).</p>
+<p>We managed to get most of this done in about three hours (start up and break included). The resulting code is on github (<a href="http://github.com/playbe/quickquizz-dojo">http://github.com/playbe/quickquizz-dojo</a>).   <br/>
+But please remember, if you decide to take a peek at the code, that it's all about the <em>journey</em>, not the destination :).</p>
 
 <h2>The Journey</h2>
 
 <p>The original idea was to have two people pair programming on a laptop in front of the room, with the audience following their progress on a big screen behind them, and to switch one of the pair every ten minutes.
-But when I got to the cegeka offices in the afternoon to prepare the room, I noticed that the wireless keyboard &amp; mous I brought actually worked from everywhere in the room, with the laptop open in front. So what we did was: instead of moving people every ten minutes, we moved the mouse and keyboard around.</p>
+But when I got to the cegeka offices in the afternoon to prepare, I noticed that the wireless keyboard and mouse I brought actually worked from everywhere in the room, with the laptop open in front. So instead of moving the participants every ten minutes, we decided to move around the mouse and keyboard.</p>
 
-<p>I think that was a game changer.</p>
+<p>That was a game changer. People did not have to get on the stage, they could literally work from within the group. The rest of us, who didn't have the keyboard, were not the <em>audience</em>, but actively participated in helping the keyboard holder.  <br/>
+Also, the fact that we were sitting around tables in a big U-shape helped the interaction between the participants.</p>
 
-<h2>Table placement</h2>
+<h2>Lessons Learned</h2>
 
-<p>The wireless keyboard thing worked. Also, the fact we were sitting around tables in a in a big U-shape clearly helped interaction.</p>
+<p>I think the dojo was a success. We gathered play enthousiasts, wrote some cool code, and had fun while doing that. However, there are some things I want to write down for future reference; things that can be improved.</p>
 
-<h2>Timing: </h2>
+<h3>Make the coder order unpredictable</h3>
 
-<p>If you do a dojo, timing is important. A very obvious thing only occurred to me during the dojo: if you have 20 people, and each of them codes for 10 minutes, you need 200 minutes of coding time. We actually forgot to calculate this up front..</p>
+<p>The keyboard was passed along from left to right (or right to left, depending on your viewpoint). Result was that everything became quite predictable: people at the end of the U knew they wouldn't have to code before some time, and the ones who coded in the beginning of the evening knew their turn was over.  <br/>
+Perhaps we need to make it a bit less predictable (randomize?) next time.</p>
 
-<h2>Keyboard</h2>
+<h3>The First coder</h3>
 
-<p>In a 'normal' XXX dojo, there's two people pair programing in front of the room on a laptop, while the rest of the participants follow on the big screen. Every x minutes, one of the pairs is swapped with someone from the audience, and at the end of the evening everybody should have coded at least once.</p>
+<p>We deliberately chose to start with an empty page, to show how easy it is with Play to start a new project.        <br/>
+However, we should've made sure the first guy at the keyboard had already played with Play 2 before at least a bit. <code>play new quickquizz</code> is easy, but right after that, you need to start using the framework. And that's a hard thing to do if you never used it.
+Btw: Sorry Tim, next time you're not the first one, I promise ;)</p>
 
-<p>We did it slightly different. When I arrived at the Cegeka offices in the afternoon, the room was free so I put myself in a chair started hacking. I noticed that the wireless keyboard I brought actually worked if I moved to the back of the room.</p>
+<h3>IDE Woes</h3>
 
-<p>The keyboard was passed along from left to right (or right to left, depending on your viewpoint). Result was that everything became very predictable: people at the end of the U knew they wouldn't have to code before some time, and the ones who coded in the beginning of the evening quickly knew their turn had passed.  <br/>
-Perhaps we need to make it a bit less predictable next time.</p>
+<p>I'm an IntelliJ fan, I've been one since version 5 or so. However, I respect other people's choice. Even if there really is no choice :)
+The thing is, during the dojo, some people struggled with the keyboard shortcuts. We could've been avoided that by having eclipse installed and opened on the same project so that people could just alt+tab to their favorite IDE.  <br/>
+In the same category: some people are used to querty, others to azerty. Perhaps a shortcut to switch keyboard layouts would've been useful.</p>
 
-<p>When doing a dojo, make sure the first person to code knows at least a bit about the technology. It's very hard for a complete newbie to just start working</p>
+<h2>Conclusion</h2>
 
-<h2>IDE war</h2>
+<p>I want to explicitely thank <a href="http://www.cegeka.be">Cegeka</a> for hosting and sponsoring this event for us. A nice atmosphere is the first requirement for a good dojo, and a nice atmosphere it was. Thanks!</p>
 
-<p>It's an eternal war, and it can't be won.
-Neither</p>
+<p>If you have any remarks on the above, whether or not you were at the dojo, please leave a comment below, or send me a tweet. I strongly believe people learn a lot more from each other than they do from books, and holding a dojo is one of the ways to learn and have fun at the same time.</p>
 
-<p>I'm an IntelliJ fan, always been one, but I respect other people's choice (even if there really is no competition)</p>
-
-<h2>Do mockups</h2>
+<p>Also, Steve was right in his <a href="http://www.objectify.be/wordpress/?p=600">blog post</a>: Coders want to code. Which is why the Belgian Playframework User Group will be doing more code involving events in the future. Stay tuned!</p>
 ]]></content>
   </entry>
   
@@ -97,268 +99,6 @@ No PlayFramework experience is required, the only thing you should be familiar w
 <a href="http://www.meetup.com/play-be/events/78580712/">Registration</a> is required, but free.</p>
 
 <p>Hope to see you there!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Play2, SecureSocial, Heroku, and how to keep your secrets secret]]></title>
-    <link href="http://ostia.be/blog/2012/09/11/securesocial-and-heroku-keep-your-secrets-secret/"/>
-    <updated>2012-09-11T00:19:00+02:00</updated>
-    <id>http://ostia.be/blog/2012/09/11/securesocial-and-heroku-keep-your-secrets-secret</id>
-    <content type="html"><![CDATA[<p>I'm a contributor on an open source project called <a href="https://github.com/play-modules/modules.playframework.org">modules.playframework.org</a>, a public module repository for playframework that is to replace the <a href="http://www.playframework.org/modules">existing modules page</a> in the near future.
-We're using the new <a href="https://github.com/jaliss/securesocial">SecureSocial</a> module for play2 by the ever  helpful Jorge (<a href="https://twitter.com/jaliss">@jaliss</a>) so that people to log in using
-their twitter, facebook, google and linkedin accounts.</p>
-
-<p>Being an open source project does mean that the source (and configuration) is out in the open. However, some things are better kept secret, such as secret api keys (if the variable name contains the word 'secret', that's a clue ;)).</p>
-
-<p>So, we want to push our code to github without publishing the secret keys. On the other hand we also want to deploy a working app on Heroku.    <br/>
-In this post I'll show you how we kept our secrets secret, without the need for a separate git branch and without sacrificing the simplicity of <code>git push heroku</code>, by splitting up our development and production configuration, and by using Heroku's environment variables.</p>
-
-<!-- more -->
-
-
-<h2>Split up configuration for development and production</h2>
-
-<p>Play2 allows you to 'include' configuration files and to override previously defined properties.   <br/>
-To keep things simple, we'll keep our development configuration in the default <code>/conf/application.conf</code> file, and override what's necessary in a separate <code>/conf/production.conf</code> file.</p>
-
-<p>This is what our production configuration looks like:</p>
-
-<p>``` yml production.conf</p>
-
-<pre><code># include the default configuration
-include "application.conf"  
-
-securesocial {
-
-    onLoginGoTo=/
-    onLogoutGoTo=/
-
-    twitter {
-        requestTokenUrl="https://api.twitter.com/oauth/request_token"
-        accessTokenUrl="https://api.twitter.com/oauth/access_token"
-        authorizationUrl="https://api.twitter.com/oauth/authorize"
-        consumerKey=${?TWITTER_CONSUMER_KEY}
-        consumerSecret=${?TWITTER_CONSUMER_SECRET}
-    }
-
-    #   ... more configuration for facebook, linkedin etc. ...
-}
-</code></pre>
-
-<p>```</p>
-
-<p>Note that consumerKey and consumerSecret properties are defined as <code>${?VAR_NAME}</code>. Don't worry, that's part of the plan. Later on we'll configure those in environment variables on Heroku. The point is that the actual secrets won't be pushed to your git remotes.</p>
-
-<p>Our <code>application.conf</code> file also configures the Secure Social module:</p>
-
-<p>``` yml application.conf</p>
-
-<pre><code>#   ... other usual configuration for play, such as loggers, db conf, etc. 
-
-
-securesocial {
-
-    onLoginGoTo=/
-    onLogoutGoTo=/
-
-    twitter {
-        requestTokenUrl="https://api.twitter.com/oauth/request_token"
-        accessTokenUrl="https://api.twitter.com/oauth/access_token"
-        authorizationUrl="https://api.twitter.com/oauth/authorize"
-        consumerKey=ZgO1k57cxgodmNFa8Vkfg
-        consumerSecret=HVchVmadIZcZnxZdOTr1S2gkwDdk64XzY3DxWMg9Xg
-    }
-
-     google {
-        authorizationUrl=WONT_WORK
-        accessTokenUrl=WONT_WORK
-        clientId=WONT_WORK
-        clientSecret=WONT_WORK
-        scope=WONT_WORK
-    }
-
-    facebook {
-        authorizationUrl=WONT_WORK
-        accessTokenUrl=WONT_WORK
-        clientId=WONT_WORK
-        clientSecret=WONT_WORK
-        scope=WONT_WORK
-    }
-
-    linkedin {
-        requestTokenUrl=WONT_WORK
-        accessTokenUrl=WONT_WORK
-        authorizationUrl=WONT_WORK
-        consumerKey=WONT_WORK
-        consumerSecret=WONT_WORK
-    }
-
-}
-</code></pre>
-
-<p>```</p>
-
-<p>Two important things to note here:</p>
-
-<ul>
-<li>When running the application without loading the <code>production.conf</code> file, we'll only be able to use twitter to log in, since the google, facebook and linkedin secrets are missing here. However, we do need to 'configure' them, since Secure Social needs every provider to be loaded as a plugin in the <code>play.plugins</code> file, and that file is the same for development and production.</li>
-<li>We configure the Twitter provider with keys from a twitter app that was specifically created for testing purposes, found <a href="http://foobla.com/faqs/obsocialsubmit/twitter-apps-for-testing.html">here</a>. We could've done that for the other providers as well, but we didn't.</li>
-</ul>
-
-
-<h2>Setup Heroku</h2>
-
-<p>Last step: we want Heroku to tell Play to use the <code>production.conf</code> file on startup. That's what the <code>Procfile</code> is for. Just add <code>-Dconfig.resource=production.conf</code> and you're done.  <br/>
-You could also load your production config from an external file or an url (see the <a href="http://www.playframework.org/documentation/2.0.3/ProductionConfiguration">docs</a>).</p>
-
-<p>Finally, in order to make the variables in our <code>production.conf</code> resolve, you need to tell Heroku about them. Here's how:</p>
-
-<pre><code>heroku config:add \
-    TWITTER_CONSUMER_KEY=realKey \
-    TWITTER_CONSUMER_SECRET=realSecret \
-    other keys
-</code></pre>
-
-<p>This will set the environment variables, increase the version number of your dyno and restart it.
-Story done!</p>
-
-<h2>Final notes </h2>
-
-<p>Splitting up your development and production configuration is obviously useful for many things: db configuration, logging, everything really.</p>
-
-<p>Also, we found it easiest to have a default (dev) configuration and override what's necessary for production, but there are other possibilities. Whatever you do, don't over-engineer it: I know for myself I understand <em>real</em> code a lot better than configuration files. Which is what's wrong with Spring, but that's another story.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Play2, SecureSocial, Heroku, and how to keep your secrets secret]]></title>
-    <link href="http://ostia.be/blog/2012/09/11/securesocial-and-heroku-keep-your-secrets-secret/"/>
-    <updated>2012-09-11T00:19:00+02:00</updated>
-    <id>http://ostia.be/blog/2012/09/11/securesocial-and-heroku-keep-your-secrets-secret</id>
-    <content type="html"><![CDATA[<p>I'm a contributor on an open source project called <a href="https://github.com/play-modules/modules.playframework.org">modules.playframework.org</a>, a public module repository for playframework that is to replace the <a href="http://www.playframework.org/modules">existing modules page</a> in the near future.
-We're using the new <a href="https://github.com/jaliss/securesocial">SecureSocial</a> module for play2 by the ever  helpful Jorge (<a href="https://twitter.com/jaliss">@jaliss</a>) so that people to log in using
-their twitter, facebook, google and linkedin accounts.</p>
-
-<p>Being an open source project does mean that the source (and configuration) is out in the open. However, some things are better kept secret, such as secret api keys (if the variable name contains the word 'secret', that's a clue ;)).</p>
-
-<p>So, we want to push our code to github without publishing the secret keys. On the other hand we also want to deploy a working app on Heroku.    <br/>
-In this post I'll show you how we kept our secrets secret, without the need for a separate git branch and without sacrificing the simplicity of <code>git push heroku</code>, by splitting up our development and production configuration, and by using Heroku's environment variables.</p>
-
-<!-- more -->
-
-
-<h2>Split up configuration for development and production</h2>
-
-<p>Play2 allows you to 'include' configuration files and to override previously defined properties.   <br/>
-To keep things simple, we'll keep our development configuration in the default <code>/conf/application.conf</code> file, and override what's necessary in a separate <code>/conf/production.conf</code> file.</p>
-
-<p>This is what our production configuration looks like:</p>
-
-<p>``` yml production.conf</p>
-
-<pre><code># include the default configuration
-include "application.conf"  
-
-securesocial {
-
-    onLoginGoTo=/
-    onLogoutGoTo=/
-
-    twitter {
-        requestTokenUrl="https://api.twitter.com/oauth/request_token"
-        accessTokenUrl="https://api.twitter.com/oauth/access_token"
-        authorizationUrl="https://api.twitter.com/oauth/authorize"
-        consumerKey=${?TWITTER_CONSUMER_KEY}
-        consumerSecret=${?TWITTER_CONSUMER_SECRET}
-    }
-
-    #   ... more configuration for facebook, linkedin etc. ...
-}
-</code></pre>
-
-<p>```</p>
-
-<p>Note that consumerKey and consumerSecret properties are defined as <code>${?VAR_NAME}</code>. Don't worry, that's part of the plan. Later on we'll configure those in environment variables on Heroku. The point is that the actual secrets won't be pushed to your git remotes.</p>
-
-<p>Our <code>application.conf</code> file also configures the Secure Social module:</p>
-
-<p>``` yml application.conf</p>
-
-<pre><code>#   ... other usual configuration for play, such as loggers, db conf, etc. 
-
-
-securesocial {
-
-    onLoginGoTo=/
-    onLogoutGoTo=/
-
-    twitter {
-        requestTokenUrl="https://api.twitter.com/oauth/request_token"
-        accessTokenUrl="https://api.twitter.com/oauth/access_token"
-        authorizationUrl="https://api.twitter.com/oauth/authorize"
-        consumerKey=ZgO1k57cxgodmNFa8Vkfg
-        consumerSecret=HVchVmadIZcZnxZdOTr1S2gkwDdk64XzY3DxWMg9Xg
-    }
-
-     google {
-        authorizationUrl=WONT_WORK
-        accessTokenUrl=WONT_WORK
-        clientId=WONT_WORK
-        clientSecret=WONT_WORK
-        scope=WONT_WORK
-    }
-
-    facebook {
-        authorizationUrl=WONT_WORK
-        accessTokenUrl=WONT_WORK
-        clientId=WONT_WORK
-        clientSecret=WONT_WORK
-        scope=WONT_WORK
-    }
-
-    linkedin {
-        requestTokenUrl=WONT_WORK
-        accessTokenUrl=WONT_WORK
-        authorizationUrl=WONT_WORK
-        consumerKey=WONT_WORK
-        consumerSecret=WONT_WORK
-    }
-
-}
-</code></pre>
-
-<p>```</p>
-
-<p>Two important things to note here:</p>
-
-<ul>
-<li>When running the application without loading the <code>production.conf</code> file, we'll only be able to use twitter to log in, since the google, facebook and linkedin secrets are missing here. However, we do need to 'configure' them, since Secure Social needs every provider to be loaded as a plugin in the <code>play.plugins</code> file, and that file is the same for development and production.</li>
-<li>We configure the Twitter provider with keys from a twitter app that was specifically created for testing purposes, found <a href="http://foobla.com/faqs/obsocialsubmit/twitter-apps-for-testing.html">here</a>. We could've done that for the other providers as well, but we didn't.</li>
-</ul>
-
-
-<h2>Setup Heroku</h2>
-
-<p>Last step: we want Heroku to tell Play to use the <code>production.conf</code> file on startup. That's what the <code>Procfile</code> is for. Just add <code>-Dconfig.resource=production.conf</code> and you're done.  <br/>
-You could also load your production config from an external file or an url (see the <a href="http://www.playframework.org/documentation/2.0.3/ProductionConfiguration">docs</a>).</p>
-
-<p>Finally, in order to make the variables in our <code>production.conf</code> resolve, you need to tell Heroku about them. Here's how:</p>
-
-<pre><code>heroku config:add \
-    TWITTER_CONSUMER_KEY=realKey \
-    TWITTER_CONSUMER_SECRET=realSecret \
-    other keys
-</code></pre>
-
-<p>This will set the environment variables, increase the version number of your dyno and restart it.
-Story done!</p>
-
-<h2>Final notes </h2>
-
-<p>Splitting up your development and production configuration is obviously useful for many things: db configuration, logging, everything really.</p>
-
-<p>Also, we found it easiest to have a default (dev) configuration and override what's necessary for production, but there are other possibilities. Whatever you do, don't over-engineer it: I know for myself I understand <em>real</em> code a lot better than configuration files. Which is what's wrong with Spring, but that's another story.</p>
 ]]></content>
   </entry>
   

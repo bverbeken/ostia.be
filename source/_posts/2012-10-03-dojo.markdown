@@ -1,69 +1,61 @@
 ---
 layout: post
 title: "Dojo"
-date: 2012-10-03 13:43
+date: 2012-10-04 13:43
 comments: true
 categories:
 - playbe
 - playframework
 - dojo
-published: false 
+published: true
 ---
 
-The Belgian Playframework User Group held it's first coding event last wednesday: a Coding Dojo.     
-The ingrediënts: 17 nice people, a decent sized room, food and drinks (thank you [Cegeka](http://www.cegeka.be)!), and Playframework of course.    
+The Belgian Playframework User Group held it's first coding event last Wednesday: a Coding Dojo.     
+The ingrediënts: 17 nice people, a decent sized room, food and drinks, and Playframework of course.    
 
-A Coding Dojo is an event where people gather to code and learn together. The goal of a dojo is exactly that: to code and learn, nothing more. It's about the journey, not the destination.    
-Ours was a *Randori Kata*, a kind of dojo where the whole group works together to build an application in a couple of hours. We changed the format just a wee bit, but more on that later in this post. 
+A [Coding Dojo](http://www.codingdojo.org) is an event where people gather to code and learn together. The goal of a dojo is exactly that: to code and learn, nothing more. It's about the journey, not the destination.     
+Ours was a *Randori Kata*, a kind of dojo where the whole group works together to build an application in a couple of hours, by pair programming on stage. We changed that format just a wee bit, more on that further down in this post. 
 
 <!-- more -->
 
 
 The Application
 ----------------
-The application we would build is QuickQuizz, a quiz engine for twitter. The idea is simple: Quickquizz allows quizmasters to write questions and the expected answer, Quickquizz tweets the questions on a special [@quickquizz](http://twitter.com/quickquizz) account, and people can answer these questions by replying to the tweet. Quickquizz then fetches the answers, scores them and shows an overview of all participants and their scores on a simple overview page. 
+The application we built is called QuickQuizz, a quiz engine for Twitter. The idea is simple: Quickquizz allows quizmasters to write questions and the expected answer. It tweets the questions on a special [@quickquizz](http://twitter.com/quickquizz) account, and people can answer these questions by replying to the tweet. Quickquizz then fetches the answers (asynchronously, using [Akka](http://akka.io)), scores them and shows an overview of all quizzers and their scores on a simple overview page. 
 
-We managed to get most of this done on Wednesday, in about three hours (break & startup included). The resulting code is on github (<http://github.com/playbe/quickquizz-dojo>).     
-Remember, if you decide to take a peek at the code, that it's all about the journey, not the destination :).  
+We managed to get most of this done in about three hours (start up and break included). The resulting code is on github (<http://github.com/playbe/quickquizz-dojo>).     
+But please remember, if you decide to take a peek at the code, that it's all about the *journey*, not the destination :).  
 
 The Journey
--------------
+-----------
 The original idea was to have two people pair programming on a laptop in front of the room, with the audience following their progress on a big screen behind them, and to switch one of the pair every ten minutes. 
-But when I got to the cegeka offices in the afternoon to prepare the room, I noticed that the wireless keyboard & mous I brought actually worked from everywhere in the room, with the laptop open in front. So what we did was: instead of moving people every ten minutes, we moved the mouse and keyboard around.  
+But when I got to the cegeka offices in the afternoon to prepare, I noticed that the wireless keyboard and mouse I brought actually worked from everywhere in the room, with the laptop open in front. So instead of moving the participants every ten minutes, we decided to move around the mouse and keyboard.  
 
-I think that was a game changer. 
+That was a game changer. People did not have to get on the stage, they could literally work from within the group. The rest of us, who didn't have the keyboard, were not the *audience*, but actively participated in helping the keyboard holder.    
+Also, the fact that we were sitting around tables in a big U-shape helped the interaction between the participants. 
 
+Lessons Learned
+----------------
+I think the dojo was a success. We gathered play enthousiasts, wrote some cool code, and had fun while doing that. However, there are some things I want to write down for future reference; things that can be improved. 
 
+### Make the coder order unpredictable
+The keyboard was passed along from left to right (or right to left, depending on your viewpoint). Result was that everything became quite predictable: people at the end of the U knew they wouldn't have to code before some time, and the ones who coded in the beginning of the evening knew their turn was over.    
+Perhaps we need to make it a bit less predictable (randomize?) next time. 
 
+### The First coder
+We deliberately chose to start with an empty page, to show how easy it is with Play to start a new project.          
+However, we should've made sure the first guy at the keyboard had already played with Play 2 before at least a bit. `play new quickquizz` is easy, but right after that, you need to start using the framework. And that's a hard thing to do if you never used it. 
+Btw: Sorry Tim, next time you're not the first one, I promise ;)
 
-Table placement
---------------------
-
-The wireless keyboard thing worked. Also, the fact we were sitting around tables in a in a big U-shape clearly helped interaction. 
-
-Timing: 
------------
-If you do a dojo, timing is important. A very obvious thing only occurred to me during the dojo: if you have 20 people, and each of them codes for 10 minutes, you need 200 minutes of coding time. We actually forgot to calculate this up front..  
-
-
-Keyboard
--------------
-In a 'normal' XXX dojo, there's two people pair programing in front of the room on a laptop, while the rest of the participants follow on the big screen. Every x minutes, one of the pairs is swapped with someone from the audience, and at the end of the evening everybody should have coded at least once. 
+### IDE Woes
+I'm an IntelliJ fan, I've been one since version 5 or so. However, I respect other people's choice. Even if there really is no choice :) 
+The thing is, during the dojo, some people struggled with the keyboard shortcuts. We could've been avoided that by having eclipse installed and opened on the same project so that people could just alt+tab to their favorite IDE.    
+In the same category: some people are used to querty, others to azerty. Perhaps a shortcut to switch keyboard layouts would've been useful. 
  
-We did it slightly different. When I arrived at the Cegeka offices in the afternoon, the room was free so I put myself in a chair started hacking. I noticed that the wireless keyboard I brought actually worked if I moved to the back of the room. 
+Conclusion
+----------
+I want to explicitely thank [Cegeka](http://www.cegeka.be) for hosting and sponsoring this event for us. A nice atmosphere is the first requirement for a good dojo, and a nice atmosphere it was. Thanks!   
 
-The keyboard was passed along from left to right (or right to left, depending on your viewpoint). Result was that everything became very predictable: people at the end of the U knew they wouldn't have to code before some time, and the ones who coded in the beginning of the evening quickly knew their turn had passed.    
-Perhaps we need to make it a bit less predictable next time. 
+If you have any remarks on the above, whether or not you were at the dojo, please leave a comment below, or send me a tweet. I strongly believe people learn a lot more from each other than they do from books, and holding a dojo is one of the ways to learn and have fun at the same time. 
 
-When doing a dojo, make sure the first person to code knows at least a bit about the technology. It's very hard for a complete newbie to just start working
-
-IDE war
--------
-It's an eternal war, and it can't be won.
-Neither 
-
-I'm an IntelliJ fan, always been one, but I respect other people's choice (even if there really is no competition)
-
-
-Do mockups
------------
+Also, Steve was right in his [blog post](http://www.objectify.be/wordpress/?p=600): Coders want to code. Which is why the Belgian Playframework User Group will be doing more code involving events in the future. Stay tuned! 
