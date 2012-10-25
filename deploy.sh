@@ -4,4 +4,5 @@ rake install['ostia']
 rake generate
 git add .
 git commit -m "blog updated"
-git push 
+git push origin
+git push github
