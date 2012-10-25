@@ -7,14 +7,14 @@ categories:
 published: false
 ---
 
-Until recently, I used the term *legacy code* for old code. Code that had been written ten consultants ago, and has stopped evolving because it's too complicated and critical that nobody dares to take responsibility.   
+Until recently, I used the term *legacy code* for ancient code that had been written ten consultants ago, and has stopped evolving because it's too complicated and critical that nobody dares to take responsibility.   
 We've all seen that code and we all love to hate that consultant, don't we. 
 
 
-And then I learned about a new definition of legacy code: 
+And then I learned about another definition of legacy code, one that Michael Feathers ([@mfeathers](https://twitter.com/mfeathers)) introduced in his book, [Working Effectively with Legacy Code](http://www.informit.com/store/working-effectively-with-legacy-code-9780131177055): 
 
 {% blockquote %}
-legacy code is untested code. 
+legacy code is code without tests. 
 {% endblockquote %}
 
 I liked the sound of that, but until yesterday I didn't really understand this is indeed a very good definition of legacy code.
