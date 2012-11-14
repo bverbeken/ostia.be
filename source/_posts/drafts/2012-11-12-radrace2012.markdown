@@ -1,0 +1,29 @@
+---
+layout: post
+title: "radrace2012"
+date: 2012-11-12 10:07
+comments: true
+categories:
+- Play!
+- RAD
+published: false 
+---
+
+Last friday and saturday, Matti Roloux ([@mroloux](XXX)) and I went to Hasselt to participate in the [Rad Race 2012](XXX), a two-day competition in which teams of two developers build an application from scratch. 
+
+<!-- more -->
+
+The Assignment
+-----------------
+Unfortunately I can't tell you about the actual content of the project, since we signed a non-disclosure agreement, for obvious reasons. What I can tell you is that the main ideas of any typical business application were there: lots of initial data to import, a complex collection of business rules (that changed during the race), role-based security, batch jobs, etc. 
+The assignment was huge. If I were asked to build this application as a real life project, I'd estimate the workload to be 30 mandays or so. We had just 3.
+
+Luckily, this was *not* a real life situation, which allowed us to drop unimportant things like testing :) 
+
+Our solution
+-------------
+
+
+Conclusion
+------------
+It was fun! 

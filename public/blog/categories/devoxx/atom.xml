@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: devoxx | Ostia]]></title>
+  <link href="http://ostia.be/blog/categories/devoxx/atom.xml" rel="self"/>
+  <link href="http://ostia.be/"/>
+  <updated>2012-11-14T13:05:03+01:00</updated>
+  <id>http://ostia.be/</id>
+  <author>
+    <name><![CDATA[Ben Verbeken]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Devoxx University highlights]]></title>
+    <link href="http://ostia.be/blog/2012/11/14/devoxx-university/"/>
+    <updated>2012-11-14T12:49:00+01:00</updated>
+    <id>http://ostia.be/blog/2012/11/14/devoxx-university</id>
+    <content type="html"><![CDATA[<p>It's that time of the year again: Devoxx, Antwerp, the largest independent all things JVM conference. Not 'Java' anymore, because obviously there are many things going on, and I didn't attend a single java(-only) flavoured talk in my whole first day.<br/>
+Some highlights.</p>
+
+<!-- more -->
+
+
+<h1>Day 1</h1>
+
+<h2>PlayFramework</h2>
+
+<p>In the morning: the <strong>Playframework crash course</strong>. What else. <br/>
+First, <a href="https://twitter.com/pk11">Peter Hausel</a> touched a lot of interesting topics for experienced play developers (love the splitting up of routes files in the upcoming Play 2.1!). However, I do think his talk was scheduled a bit oddly by the organisation. His other talk in the late afternoon which I attended as well, was an half-hour demo of how to build a Play 2 app from the ground up, and my feeling is that more people would've enjoyed his first talk after seeing his second.
+During the second part of the crash course <a href="https://twitter.com/sadache">Sadek Drobi</a> and <a href="https://twitter.com/guillaumebort">Guillaume Bort</a> presented Play 2 as a tool for realtime web (RTW) programming. I've seen them giving talks a couple of times now, and it amazes me how they keep putting new things in their presentations.</p>
+
+<h2>Ceylon Lab</h2>
+
+<p>In the afternoon, I participated in the <strong>Write your first Ceylon programme with the language authors</strong> (Emmanuel Bernard, Gavin King &amp; Stéphane Epardaud). Glad I did, Ceylon - which is pronounced more as <em>salon</em> than as <em>say lon</em> - has some interesting features, but most interesting is the type system. with features like <em>union types</em>, which allow you to write things like</p>
+
+<p>```
+void doSomething(Integer|String aVar){</p>
+
+<pre><code>if (is Integer aVar){
+    // here aVar is of type Integer
+} else if (is String aVar){
+    // here aVar is if type String
+}
+</code></pre>
+
+<p>}
+```</p>
+
+<p>Not sure how dangerous this is in real life projects, but at least it's an interesting idea to think about.</p>
+
+<p>Personal musing: I like that the ceylon guys used Playframework to <em>Ceylon Herd</em>, which is what the Ceylon module repository is called.</p>
+
+<h2>Scala Enthusiasts Gathering (aka The Scala Bof)</h2>
+
+<p>Yet another highlight on the first day was the Scala enthusiasts gathering. To keep things light, Renato Cavalcanti (<a href="https://twitter.com/renatocaval">@renatocaval</a>) and his team decided to make it a panel discussion with some high profile people from the scala world.
+It wasn't a really focused discussion, but that didn't matter as it allowed to cover lots of different topics.
+And there was good belgian quality beer, thanks for that, <a href="https://twitter.com/be_scala">@be_scala</a>!</p>
+
+<h1>Day 2</h1>
+
+<h2>More Scala</h2>
+
+<p>I planned to go to the OpenJDK bugathon, but I came in way too late thanks to belgian traffic. <br/>
+so I missed the OpenJDK Hack Session I planned to attend (no java, again, this is becoming a pattern) and I went to follow the rest of <strong>Scala advanced concepts and best practices</strong> by Dick Wall and Bill Venners.
+A couple of quotes:</p>
+
+<p><blockquote><p>Yes, it's an evil premature optimization, but it's a neat one.</p><footer><strong>Dick Wall</strong> <cite>About Using "X &amp; 1" Instead of ] "X % 2" to Check Whether a Number Is Even or Not</cite></footer></blockquote></p>
+
+<p><blockquote><p>This is the zen-slide</p></blockquote></p>
+
+<p><blockquote><p>Syntax coloring in IDE: turn your vars red</p></blockquote></p>
+
+<h2>AngularJs</h2>
+
+<p>In the afternoon: the AngularJs lab. Awesome technology, I'm definitely going to check that out for an upcoming project we're planning. (Right, Matti? :))</p>
+
+<h1>Conclusion</h1>
+
+<p>That's it for the Devoxx University. Two down, three to go. I'm looking forward to tonight's PlayBe meetup, 7pm at the Axxess Café, right next to the metropolis main entrance.  <br/>
+Hope to see you there!</p>
+]]></content>
+  </entry>
+  
+</feed>

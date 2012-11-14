@@ -1,0 +1,354 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "2012-11-13-devoxx-day-1.markdown",
+			"settings":
+			{
+				"buffer_size": 2718,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/etc/dhcp/dhclient.conf",
+			"settings":
+			{
+				"buffer_size": 1791,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 117.0,
+		"selected_items":
+		[
+			[
+				"previe",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"markd",
+				"Markdown Preview: preview in Sublime Text"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"markdo",
+				"Set Syntax: Markdown"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"key ",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"proje",
+				"Project: Add Folder"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 153.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/bver/Development/work/ostia.be/source/_posts/2012-11-13-devoxx-day-1.markdown",
+		"/home/bver/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/bver/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/bver/Development/work/ostia.be/source/_posts/2012-11-13-devoxx-day-2.markdown",
+		"/home/bver/Development/courses/devoxx12/angularJs/foodme/README.md",
+		"/home/bver/Development/courses/devoxx12/angularJs/foodme/app/index.html",
+		"/home/bver/Development/courses/devoxx12/angularJs/foodme/app/js/app.js",
+		"/home/bver/Development/courses/devoxx12/angularJs/foodme/test/e2e/scenarios.js",
+		"/home/bver/Development/work/ostia.be/source/_posts/2012-11-12-radrace2012.markdown",
+		"/home/bver/Development/work/ostia.be/source/_posts/2012-08-29-totestornottotest.markdown",
+		"/home/bver/.cache/.fr-SFuFW2/ceylon-herd-clean/conf/application.conf",
+		"/home/bver/.cache/.fr-G8xfeo/ceylon-herd-clean/conf/application.conf",
+		"/home/bver/Development/work/ostia.be/source/_posts/2012-10-26-abtru.markdown",
+		"/home/bver/Development/work/radrace/logs/system.out",
+		"/home/bver/Development/tools/playframework/usePlay.sh",
+		"/home/bver/Development/work/cegekaplaycc/cegekaplaycc1/app/views/main.html",
+		"/home/bver/Development/work/litmus/samples/conf/dependencies.yml",
+		"/home/bver/Downloads/Huffman.scala",
+		"/home/bver/.bash_aliases",
+		"/home/bver/Development/work/bookr.be.original/app/models/Seat.java",
+		"/home/bver/Development/work/bookr.be.original/app/models/AbstractEntity.java",
+		"/home/bver/Development/work/bookr.be.original/test/models/TicketOrderIntegrationTest.java",
+		"/home/bver/Development/work/cegekaplaycc/cegekaplaycc1/test/functional/DashboardTest.java",
+		"/home/bver/Development/work/cegekaplaycc/cegekaplaycc1/test/functional/HoldYourHorsesFunctionalTest.java",
+		"/home/bver/Development/work/cegekaplaycc/cegekaplaycc1/app/securesocial/CustomSecureSocialPlayerService.java",
+		"/home/bver/Development/work/cegekaplaycc/cegekaplaycc1/test/functional/SecurityFunctionalTest.java",
+		"/home/bver/Development/work/bookr.be/conf/application.conf",
+		"/home/bver/Development/work/bookr.be/conf/dependencies.yml",
+		"/home/bver/Development/work/bookr.be/conf/messages",
+		"/home/bver/Development/work/bookr.be/conf/routes",
+		"/home/bver/Development/work/ostia.be/source/_posts/drafts/2012-10-25-legacy-code.markdown",
+		"/home/bver/Development/work/ostia.be/source/_posts/2012-09-10-xp-explained-without-explaining.markdown",
+		"/home/bver/Development/work/ostia.be/source/_posts/2012-10-25-legacy-code.markdown",
+		"/home/bver/Development/work/ostia.be/deploy.sh",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-usage/conf/routes",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-usage/app/controllers/Application.java",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-usage/Procfile",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-usage/app/views/main.scala.html",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-usage/app/views/_emailPartial.scala.html",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-usage/app/views/_providerPartial.scala.html",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-simple-oauth (copy)/app/Global.java",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-simple-oauth (copy)/app/models/LinkedAccount.java",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-simple-oauth (copy)/app/models/User.java",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-simple-oauth (copy)/app/service/MyUserServicePlugin.java",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-simple-oauth (copy)/app/controllers/Application.java",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-simple-oauth (copy)/app/controllers/Secured.java",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-simple-oauth (copy)/conf/routes",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-simple-oauth (copy)/app/views/restricted.scala.html",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-simple-oauth (copy)/app/views/main.scala.html",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-simple-oauth (copy)/app/controllers/Restricted.java",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-simple-oauth/conf/routes",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-simple-oauth/conf/application.conf",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-simple-oauth/conf/play-authenticate/mine.conf",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-simple-oauth/app/models/User.java",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-simple-oauth/app/models/LinkedAccount.java",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-simple-oauth/app/controllers/Application.java",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-simple-oauth/app/Global.java",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-simple-oauth (copy)/README.md",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-simple-oauth (copy)/project/build.properties",
+		"/home/bver/Development/work/ostia.be/source/_posts/2012-10-20-play-2-test-runner.markdown",
+		"/home/bver/Development/work/ostia.be/source/_posts/2012-09-18-playbe-first-dojo.markdown",
+		"/home/bver/Development/work/ostia.be/source/_posts/2012-10-03-dojo.markdown",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-usage/conf/play.plugins",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-usage/conf/play-authenticate/mine.conf",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-usage/conf/application.conf",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-usage/conf/play-authenticate/deadbolt.conf",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-usage/project/build.properties",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-usage/project/Build.scala",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-usage/project/plugins.sbt",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-usage/README.md",
+		"/home/bver/Development/tmp/play-authenticate/samples/java/play-authenticate-simple-oauth/README.md",
+		"/home/bver/Development/work/ostia.be/public/javascripts/twitter.js",
+		"/home/bver/Development/work/ostia.be/source/_posts/2012-09-11-securesocial-and-heroku-keep-your-secrets-secret.markdown",
+		"/home/bver/Development/work/ostia.be/source/_posts/drafts/2012-09-11-securesocial-and-heroku-keep-your-secrets-secret.markdown",
+		"/home/bver/Downloads/securesocial.conf",
+		"/home/bver/Development/work/litmus/app/litmus/unit/validation/ValidationAssert.java",
+		"/home/bver/Development/work/litmus/app/litmus/unit/validation/FieldValidationAssert.java",
+		"/home/bver/Development/work/litmus/app/litmus/unit/validation/Validator.java",
+		"/home/bver/Development/work/bookr.be/.gitignore",
+		"/home/bver/Development/work/bookr.be/app/controllers/Application.java",
+		"/home/bver/Downloads/fieldHidden.scala.html",
+		"/usr/share/applications/defaults.list",
+		"/home/bver/Dropbox/dev/gitCommands",
+		"/usr/share/applications/sublime-text-2.desktop",
+		"/usr/share/applications/sublime.desktop",
+		"/home/bver/Development/courses/coursera_progfun/week3/assignments/objsets/.gitignore",
+		"/home/bver/Development/work/ostia.be/.themes/ostia/source/_includes/asides/buttons.html",
+		"/home/bver/Development/work/ostia.be/source/.themes",
+		"/home/bver/Desktop/install",
+		"/home/bver/Development/work/ostia.be/source/about/index.markdown",
+		"/home/bver/.bash_profile",
+		"/etc/NetworkManager/NetworkManager.conf",
+		"/home/bver/NetworkManager.conf",
+		"/etc/apt/apt.conf.d/50unattended-upgrades",
+		"/home/bver/bin/usePlay.sh",
+		"/home/bver/Development/tools/intellij/intellij.desktop",
+		"/home/bver/Development/tools/intellij/eclipse.desktop",
+		"/home/bver/Development/tools/scalaIDE/eclipse/eclipse.desktop",
+		"/home/bver/Development/tools/scalaIDE/eclipse/eclipse",
+		"/home/bver/.bashrc",
+		"/home/bver/.profile"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"side_",
+			"1.2.4",
+			"would",
+			"sign",
+			"boiler",
+			"playframework",
+			"playfram",
+			"Validator",
+			"validationErrorNotFoundMessage",
+			"gedit",
+			"explicitly",
+			"enth",
+			"enthousiasts",
+			"--------------------",
+			"seems",
+			"get"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "2012-11-13-devoxx-day-1.markdown",
+					"settings":
+					{
+						"buffer_size": 2718,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1302,
+								1302
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 252.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/etc/dhcp/dhclient.conf",
+					"settings":
+					{
+						"buffer_size": 1791,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Play 2.0/configuration.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 371.0,
+	"status_bar_visible": true
+}

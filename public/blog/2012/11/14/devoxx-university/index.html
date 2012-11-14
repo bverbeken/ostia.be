@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Extreme Programming Explained, without explaining - Ostia</title>
+  <title>Devoxx University highlights - Ostia</title>
   <meta name="author" content="Ben Verbeken">
 
   
-  <meta name="description" content="I&#8217;ve been reading &#8216;Extreme Programming Explained - Embrace Change&#8217;, by Kent Beck (@kentbeck). If you&#8217;ve read it too, you&# &hellip;">
+  <meta name="description" content="It&#8217;s that time of the year again: Devoxx, Antwerp, the largest independent all things JVM conference. Not &#8216;Java&#8217; anymore, because &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://ostia.be/blog/2012/09/10/xp-explained-without-explaining/">
+  <link rel="canonical" href="http://ostia.be/blog/2012/11/14/devoxx-university/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -88,7 +88,7 @@
   <header>
     
       
-        <h1 class="entry-title">Extreme Programming Explained, Without Explaining</h1>
+        <h1 class="entry-title">Devoxx University Highlights</h1>
       
     
     
@@ -105,7 +105,7 @@
   
 
 
-<time datetime="2012-09-10T20:38:00+02:00" pubdate data-updated="true">Sep 10<span>th</span>, 2012</time>
+<time datetime="2012-11-14T12:49:00+01:00" pubdate data-updated="true">Nov 14<span>th</span>, 2012</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -114,103 +114,79 @@
   </header>
 
 
-<div class="entry-content"><p>I&#8217;ve been reading &#8216;Extreme Programming Explained - Embrace Change&#8217;, by Kent Beck (<a href="http://twitter.com/kentbeck">@kentbeck</a>). If you&#8217;ve read it too, you&#8217;re probably thinking: &#8220;it&#8217;s an old book, you should&#8217;ve read it years ago&#8221;, and I agree. But if you didn&#8217;t I can only say: you should.</p>
-
-<p>Even if you&#8217;re working on a software development team but are no programmer; XP Explained does not contain any (as in &#8216;zero&#8217;) code samples, and it&#8217;s really about how to develop software as a team.</p>
+<div class="entry-content"><p>It&#8217;s that time of the year again: Devoxx, Antwerp, the largest independent all things JVM conference. Not &#8216;Java&#8217; anymore, because obviously there are many things going on, and I didn&#8217;t attend a single java(-only) flavoured talk in my whole first day.<br/>
+Some highlights.</p>
 
 <!-- more -->
 
 
-<p>And what better way is there to inspire than by listing up some favorite quotes.</p>
+<h1>Day 1</h1>
 
-<blockquote><p>XP is an opportunity [&#8230;] to realize that maybe you&#8217;ve been fine all along and just hanging with the wrong crowd.</p></blockquote>
+<h2>PlayFramework</h2>
 
+<p>In the morning: the <strong>Playframework crash course</strong>. What else. <br/>
+First, <a href="https://twitter.com/pk11">Peter Hausel</a> touched a lot of interesting topics for experienced play developers (love the splitting up of routes files in the upcoming Play 2.1!). However, I do think his talk was scheduled a bit oddly by the organisation. His other talk in the late afternoon which I attended as well, was an half-hour demo of how to build a Play 2 app from the ground up, and my feeling is that more people would&#8217;ve enjoyed his first talk after seeing his second.
+During the second part of the crash course <a href="https://twitter.com/sadache">Sadek Drobi</a> and <a href="https://twitter.com/guillaumebort">Guillaume Bort</a> presented Play 2 as a tool for realtime web (RTW) programming. I&#8217;ve seen them giving talks a couple of times now, and it amazes me how they keep putting new things in their presentations.</p>
 
-<blockquote><p>In software development, &#8220;perfect&#8221; is a verb, not an adjective.</p></blockquote>
+<h2>Ceylon Lab</h2>
 
+<p>In the afternoon, I participated in the <strong>Write your first Ceylon programme with the language authors</strong> (Emmanuel Bernard, Gavin King &amp; Stéphane Epardaud). Glad I did, Ceylon - which is pronounced more as <em>salon</em> than as <em>say lon</em> - has some interesting features, but most interesting is the type system. with features like <em>union types</em>, which allow you to write things like</p>
 
-<blockquote><p>Quality is not a control variable.</p></blockquote>
-
-
-<blockquote><p>When you&#8217;re sick, respect yourself and the rest of your team by resting and getting well. [&#8230;] Coming in sick doesn&#8217;t show commitment to work, because when you do you aren&#8217;t helping the team.</p></blockquote>
-
-
-<blockquote><p>If you need to work on an idea alone, go do it. [&#8230;] When you&#8217;re done exploring, bring the resulting idea, not the code, back to the team.</p></blockquote>
-
-
-<blockquote><p>Planning is a form of necessary waste.</p></blockquote>
-
-
-<blockquote><p>In any plan, include some tasks that can be dropped if you get behind.</p></blockquote>
-
-
-<blockquote><p>You can count on gravity. Software has few such certainties. The ten-minute build is as close as we get.</p></blockquote>
-
-
-<blockquote><p>Any guess about what parts of the system *need* [&#8230;] to be tested introduces the risk of error.</p></blockquote>
-
-
-<blockquote><p>Team programming isn&#8217;t a divide and conquer problem. It&#8217;s a divide, conquer, and integrate problem.</p></blockquote>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>void doSomething(Integer|String aVar){
+</span><span class='line'>  if (is Integer aVar){
+</span><span class='line'>      // here aVar is of type Integer
+</span><span class='line'>  } else if (is String aVar){
+</span><span class='line'>      // here aVar is if type String
+</span><span class='line'>  }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
 
 
-<blockquote><p>Test-first programming addresses many problems at once.</p></blockquote>
+<p>Not sure how dangerous this is in real life projects, but at least it&#8217;s an interesting idea to think about.</p>
+
+<p>Personal musing: I like that the ceylon guys used Playframework to <em>Ceylon Herd</em>, which is what the Ceylon module repository is called.</p>
+
+<h2>Scala Enthusiasts Gathering (aka The Scala Bof)</h2>
+
+<p>Yet another highlight on the first day was the Scala enthusiasts gathering. To keep things light, Renato Cavalcanti (<a href="https://twitter.com/renatocaval">@renatocaval</a>) and his team decided to make it a panel discussion with some high profile people from the scala world.
+It wasn&#8217;t a really focused discussion, but that didn&#8217;t matter as it allowed to cover lots of different topics.
+And there was good belgian quality beer, thanks for that, <a href="https://twitter.com/be_scala">@be_scala</a>!</p>
+
+<h1>Day 2</h1>
+
+<h2>More Scala</h2>
+
+<p>I planned to go to the OpenJDK bugathon, but I came in way too late thanks to belgian traffic. <br/>
+so I missed the OpenJDK Hack Session I planned to attend (no java, again, this is becoming a pattern) and I went to follow the rest of <strong>Scala advanced concepts and best practices</strong> by Dick Wall and Bill Venners.
+A couple of quotes:</p>
+
+<blockquote><p>Yes, it&#8217;s an evil premature optimization, but it&#8217;s a neat one.</p><footer><strong>Dick Wall</strong> <cite>About Using &#8220;X & 1&#8221; Instead of ] &#8220;X % 2&#8221; to Check Whether a Number Is Even or Not</cite></footer></blockquote>
 
 
-<blockquote><p>Change begins with awareness.</p></blockquote>
 
 
-<blockquote><p>Trust your nose about what you need to improve next.</p></blockquote>
+<blockquote><p>This is the zen-slide</p></blockquote>
 
 
-<blockquote><p>Maintain only the code and the tests as permanent artifacts.</p></blockquote>
 
 
-<blockquote><p>Any gap between what is on a programmer&#8217;s desk and what is in production is a risk.</p></blockquote>
+<blockquote><p>Syntax coloring in IDE: turn your vars red</p></blockquote>
 
 
-<blockquote><p>Planning in XP is an activity, not a phase.</p></blockquote>
+<h2>AngularJs</h2>
 
+<p>In the afternoon: the AngularJs lab. Awesome technology, I&#8217;m definitely going to check that out for an upcoming project we&#8217;re planning. (Right, Matti? :))</p>
 
-<blockquote><p>A plan in XP is an example of what *could* happen, not a prediction of what *will* happen.</p></blockquote>
+<h1>Conclusion</h1>
 
-
-<blockquote><p>The hum of conversation is a sign of health. Silence is the sound of risk piling up.</p></blockquote>
-
-
-<blockquote><p>Whichever units you use, hours or points, you will need to deal with the situation where actual results don&#8217;t match the plan.</p></blockquote>
-
-
-<blockquote><p>In XP, testing is as important as programming.</p></blockquote>
-
-
-<blockquote><p>Unfortunately, design in software has been shackled by metaphors from physical design activities.</p></blockquote>
-
-
-<blockquote><p>Even if this is the umpteenth variation on a theme, there is always a better way to design the <br/>software.</p></blockquote>
-
-
-<blockquote><p>The question is not *whether* to design, but *when* to design.</p></blockquote>
-
-
-<blockquote><p>Far from &#8220;design nothing&#8221;, the XP strategy is &#8220;design always&#8221;.</p></blockquote>
-
-
-<blockquote><p>I discover the need for design investment by spotting duplication.</p></blockquote>
-
-
-<blockquote><p>If you are confronted with a big pile of mud, you can still begin improving the design. <br/>Why is Taylorism important for software engineering? No one walks around a development shop with a clipboard and a stopwatch.</p></blockquote>
-
-
-<blockquote><p>&#8220;Continuous&#8221; learning is not continuous.</p></blockquote>
-
-
-<blockquote><p>So the question, &#8220;Is my team extreme?&#8221; There isn&#8217;t a binary answer.</p></blockquote>
-
-
-<p>And last but not least:</p>
-
-<blockquote><p>The key to XP is integrity, acting in harmony with my true values.</p></blockquote>
-
+<p>That&#8217;s it for the Devoxx University. Two down, three to go. I&#8217;m looking forward to tonight&#8217;s PlayBe meetup, 7pm at the Axxess Café, right next to the metropolis main entrance.  <br/>
+Hope to see you there!</p>
 </div>
 
 
@@ -233,12 +209,12 @@
   
 
 
-<time datetime="2012-09-10T20:38:00+02:00" pubdate data-updated="true">Sep 10<span>th</span>, 2012</time>
+<time datetime="2012-11-14T12:49:00+01:00" pubdate data-updated="true">Nov 14<span>th</span>, 2012</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/xp/'>XP</a>, <a class='category' href='/blog/categories/agile/'>agile</a>, <a class='category' href='/blog/categories/review/'>review</a>
+    <a class='category' href='/blog/categories/angularjs/'>angularjs</a>, <a class='category' href='/blog/categories/ceylon/'>ceylon</a>, <a class='category' href='/blog/categories/conference/'>conference</a>, <a class='category' href='/blog/categories/devoxx/'>devoxx</a>, <a class='category' href='/blog/categories/playframework/'>playframework</a>, <a class='category' href='/blog/categories/scala/'>scala</a>
   
 </span>
 
@@ -247,7 +223,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ostia.be/blog/2012/09/10/xp-explained-without-explaining/" data-via="bverbeken" data-counturl="http://ostia.be/blog/2012/09/10/xp-explained-without-explaining/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ostia.be/blog/2012/11/14/devoxx-university/" data-via="bverbeken" data-counturl="http://ostia.be/blog/2012/11/14/devoxx-university/" >Tweet</a>
   
   
   
@@ -258,10 +234,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left articlenav" href="/blog/2012/08/29/totestornottotest/" title="Previous Post: To Test Or Not To Test">&laquo; To Test Or Not To Test</a>
+        <a class="basic-alignment left articlenav" href="/blog/2012/10/22/play-2-test-runner/" title="Previous Post: play 2 JUnit runner">&laquo; play 2 JUnit runner</a>
       
-      
-        <a class="basic-alignment right articlenav" href="/blog/2012/09/18/playbe-first-dojo/" title="Next Post: PlayBe Dojo: Play 2 & Java">PlayBe Dojo: Play 2 & Java &raquo;</a>
       
     </p>
   </footer>
@@ -382,8 +356,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://ostia.be/blog/2012/09/10/xp-explained-without-explaining/';
-        var disqus_url = 'http://ostia.be/blog/2012/09/10/xp-explained-without-explaining/';
+        var disqus_identifier = 'http://ostia.be/blog/2012/11/14/devoxx-university/';
+        var disqus_url = 'http://ostia.be/blog/2012/11/14/devoxx-university/';
         var disqus_script = 'embed.js';
       
     (function () {
