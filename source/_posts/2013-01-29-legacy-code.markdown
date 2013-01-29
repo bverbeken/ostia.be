@@ -29,7 +29,7 @@ One of the guys on my team, let's call him Alex, had been working on a restful w
 
 Fast forward a couple of weeks. A guy from the other team, Bart, comes in and tells me there's something wrong with the webservice: in a specific case, our code wouldn't reply with a *bad request*, but an *ok*. A bug. No biggie, but a bug nevertheless. I go look in the code, to only find production code. Not a single test there.   
 
-*(Before going on, an important note: I don't want to blame Alex. Nobody writes bugfree code. In his defence, this web service api is a thin layer on top of the core application and thin layers should be trivial, so I understand why writing tests in this case seem like a waste of time. I just want to explain why this is wrong imho)* 
+*(Before going on, an important note: I'm not blaming Alex. Nobody writes bugfree code. In Alex's defence, this web service api is a thin layer on top of the core application and thin layers should be trivial. So I understand why writing tests in this case seem like a waste of time.)* 
 
 Back to the bug. I have a couple of options here.
 
@@ -40,9 +40,9 @@ Back to the bug. I have a couple of options here.
 
 All of these options above are flawed to some degree. Either they involve unprofessional behaviour, or I need to spend more time then I would like to solve the bug.    
 
-The point is that I have the exact same options of responding to this particular bug as I do for a bug in code that's been there for years. It doesn't matter when the code was written or whether the guy who wrote it is still on the team or not, untested code is a black box.    
+The point is that I have the exact same options of responding to this particular bug as I do for a bug in bad code that's been there for years. It doesn't matter when the code was written or whether the guy who wrote it is still on the team or not, untested code is a black box.    
 And if the cure is the same, it must be the same disease, the rest is just politics and religion.   
 
 Hence: legacy code is untested code and untested code is legacy code, QED.
 
-*On a side note: Michael Feathers will be holding a keynote speech at the [JoyOfCoding](http://joyofcoding.org) conference in Rotterdam (The Netherlands) soon. Do check it out, the program is well worth it!*
+*On a side note: Michael Feathers will be doing a keynote at the [@JoyOfCoding](https://twitter.com/JoyOfCoding) conference in Rotterdam (The Netherlands) soon. I doubt I'll be able to make it there, my family's got a major release coming up. But do check it out, [the program](http://joyofcoding.org) is well worth it!*

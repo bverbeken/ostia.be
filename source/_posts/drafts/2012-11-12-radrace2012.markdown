@@ -4,26 +4,32 @@ title: "radrace2012"
 date: 2012-11-12 10:07
 comments: true
 categories:
-- Play!
+- playframework
 - RAD
+- competition
 published: false 
 ---
 
-Last friday and saturday, Matti Roloux ([@mroloux](XXX)) and I went to Hasselt to participate in the [Rad Race 2012](XXX), a two-day competition in which teams of two developers build an application from scratch. 
+It's been a couple of busy weeks; last week was [Devoxx](http://www.devoxx.com) week, of course. The weekend right before that, Matti Roloux ([@mroloux](XXX)) and I participated in the [Rad Race 2012](XXX), a *rapid application development* competition for teams of two developers.   
 
 <!-- more -->
 
 The Assignment
 -----------------
-Unfortunately I can't tell you about the actual content of the project, since we signed a non-disclosure agreement, for obvious reasons. What I can tell you is that the main ideas of any typical business application were there: lots of initial data to import, a complex collection of business rules (that changed during the race), role-based security, batch jobs, etc. 
-The assignment was huge. If I were asked to build this application as a real life project, I'd estimate the workload to be 30 mandays or so. We had just 3.
+Not for the faint hearted, it was. The assignment was huge. The idea was to push everyone to the limit, or, as one of the judges put it afterwards, "The assignment is big enough so that the winner will be at least a couple of hours short." 
 
+We were asked to build an application from scratch. Unfortunately I can't go into detail about the actual content of the project: we signed a non-disclosure agreement. But what I \*can\* tell you is that all the problems of any typical business application were there: lots of initial data to import, a complex collection of business rules (which changed during the race), role-based security, batch jobs, etc.  
 Luckily, this was *not* a real life situation, which allowed us to drop unimportant things like testing :) 
 
-Our solution
+The Race
 -------------
+Matti and I didn't arrive unprepared at the race. We brought screens, laptops and extra laptops, post-its, tape, paper, a printer (don't know why, even now), staplers, batteries, more tape, many many different types of markers, pens and pencils, and an army's supply of candy of course.    
+Software-wise, we just used [intellij](XXX), git & [github](XXX), [playframework](XXX) (1.2.5) and a nice little library called [guava](XXX).
+
+Friday morning, we arrived a bit after 7am in the old prison in Hasselt, and after we finished our set-up and the first cup of coffee, the assignment was handed out and read aloud. That must have been around 8, 8.30. 
+We didn't write the first line of code until at least 10:15 (again: the assignment was huge!)
 
 
 Conclusion
 ------------
-It was fun! 
+It was fun! I think the last time I was so concentrated for such a long period at a time was when I was a student. 

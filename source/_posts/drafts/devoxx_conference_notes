@@ -1,0 +1,27 @@
+Why opensource your secrets
+-------------------------------
+1. improves your design
+You have to improve it, because your code 
+- must be modular
+- must be documented
+- clean up your interfaces
+
+2. Great for PR & recruitment
+- devs can 
+- you don't get poor-fit developers for your company
+
+3. Improves your product
+- great ideas for free
+
+Caveats
+- don't open source the whole platform, pick showcases carefully
+- the open source part must be small enough so you don't spend 2 years redesigning
+
+Javascritp unit testing (wgroenev)
+----------------------------------
+
+Wouter's talk was really a high
+
+Women in IT
+---------------
+WHat I liked about this talk
