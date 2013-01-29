@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: agile - Ostia</title>
+  <title>Legacy code, an epyphany - Ostia</title>
   <meta name="author" content="Ben Verbeken">
 
   
-  <meta name="description" content="Category: agile">
+  <meta name="description" content="Until recently, I used the term legacy code for bad, ancient code that had been written ten consultants ago, for code that has stopped evolving &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://ostia.beblog/categories/agile/">
+  <link rel="canonical" href="http://ostia.be/blog/2013/01/29/legacy-code/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -83,50 +83,133 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Agile</h1>
+    
+      
+        <h1 class="entry-title">Legacy Code, an Epyphany</h1>
+      
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-29T08:14:00+01:00" pubdate data-updated="true">Jan 29<span>th</span>, 2013</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>Until recently, I used the term <em>legacy code</em> for bad, ancient code that had been written ten consultants ago, for code that has stopped evolving because it&#8217;s too complicated and critical that nobody dares to take responsibility, for code that came from someone else, you get the idea. We&#8217;ve all seen that code and we all love to hate that consultant, don&#8217;t we.</p>
 
-  
-  <h2>2012</h2>
+<p>And then I learned about another definition of legacy code, one that Michael Feathers (<a href="https://twitter.com/mfeathers">@mfeathers</a>) introduced in his book, <a href="http://www.informit.com/store/working-effectively-with-legacy-code-9780131177055">Working Effectively with Legacy Code</a>:</p>
 
-<article>
-  
-<h1><a href="/blog/2012/09/10/xp-explained-without-explaining/">Extreme Programming Explained, without explaining</a></h1>
-<time datetime="2012-09-10T20:38:00+02:00" pubdate><span class='month'>Sep</span> <span class='day'>10</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/xp/'>XP</a>, <a class='category' href='/blog/categories/agile/'>agile</a>, <a class='category' href='/blog/categories/review/'>review</a></span>
-</footer>
+<blockquote><p>legacy code is code without tests.</p></blockquote>
 
 
-</article>
+<p>Nice, short and catchy, but until yesterday I didn&#8217;t really understand this is indeed a very good definition of legacy code.</p>
+
+<!-- more -->
 
 
+<p>I&#8217;m working on a large scale web application, in a company with multiple teams, each of which is responsible for a single application.<br/>
+One of the guys on my team, let&#8217;s call him Alex, had been working on a restful web service api that would be called by one of those other teams. Couple of days work, the story card moved from TODO over DOING to DONE on our kanban board, story done.</p>
 
-<article>
-  
-<h1><a href="/blog/2012/08/29/totestornottotest/">To Test Or Not To Test</a></h1>
-<time datetime="2012-08-29T23:04:00+02:00" pubdate><span class='month'>Aug</span> <span class='day'>29</span> <span class='year'>2012</span></time>
+<p>Fast forward a couple of weeks. A guy from the other team, Bart, comes in and tells me there&#8217;s something wrong with the webservice: in a specific case, our code wouldn&#8217;t reply with a <em>bad request</em>, but an <em>ok</em>. A bug. No biggie, but a bug nevertheless. I go look in the code, to only find production code. Not a single test there.</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/play-/'>Play!</a>, <a class='category' href='/blog/categories/rad/'>RAD</a>, <a class='category' href='/blog/categories/tdd/'>TDD</a>, <a class='category' href='/blog/categories/agile/'>agile</a>, <a class='category' href='/blog/categories/games/'>games</a></span>
-</footer>
+<p><em>(Before going on, an important note: I&#8217;m not blaming Alex. Nobody writes bugfree code. In Alex&#8217;s defence, this web service api is a thin layer on top of the core application and thin layers should be trivial. So I understand why writing tests in this case seem like a waste of time.)</em></p>
+
+<p>Back to the bug. I have a couple of options here.</p>
+
+<ul>
+<li>I could <strong>delegate</strong> the bug to Alex, so that it&#8217;s not my problem anymore. However, Alex is part of the team today, but what if another bug bites when he&#8217;s not anymore?</li>
+<li>I could debug through the code, until I find the bug. <strong>Just fix it</strong> and be done with it. But how do I know I don&#8217;t introduce a new bug? How do I make sure I fixed the bug?</li>
+<li>Better, I could <strong>write a single test</strong> that reproduces this bug, and then fix it. However,  we&#8217;d still rely on the other team&#8217;s testing to know whether our api is any good. Furthermore, it could be hard to write a single failing test; perhaps the code as it is now is not very testable, given that it had been written without tests in the first place.</li>
+<li>I could treat our web service api like a nuclear reactor: build a concrete shield <strong>wall of solid integration tests</strong> around it, without touching the code. Then refactor, and then write the test that reproduces the bug. But that would be very time-consuming.</li>
+</ul>
 
 
-</article>
+<p>All of these options above are flawed to some degree. Either they involve unprofessional behaviour, or I need to spend more time then I would like to solve the bug.</p>
 
+<p>The point is that I have the exact same options of responding to this particular bug as I do for a bug in bad code that&#8217;s been there for years. It doesn&#8217;t matter when the code was written or whether the guy who wrote it is still on the team or not, untested code is a black box.  <br/>
+And if the cure is the same, it must be the same disease, the rest is just politics and religion.</p>
+
+<p>Hence: legacy code is untested code and untested code is legacy code, QED.</p>
+
+<p><em>On a side note: Michael Feathers will be doing a keynote at the <a href="https://twitter.com/JoyOfCoding">@JoyOfCoding</a> conference in Rotterdam (The Netherlands) soon. I doubt I&#8217;ll be able to make it there, my family&#8217;s got a major release coming up. But do check it out, <a href="http://joyofcoding.org">the program</a> is well worth it!</em></p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Ben Verbeken</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-29T08:14:00+01:00" pubdate data-updated="true">Jan 29<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/tdd/'>TDD</a>, <a class='category' href='/blog/categories/legacy-code/'>legacy code</a>, <a class='category' href='/blog/categories/testing/'>testing</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ostia.be/blog/2013/01/29/legacy-code/" data-via="bverbeken" data-counturl="http://ostia.be/blog/2013/01/29/legacy-code/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left articlenav" href="/blog/2012/11/14/devoxx-university/" title="Previous Post: Devoxx University highlights">&laquo; Devoxx University highlights</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -236,7 +319,10 @@
       var disqus_shortname = 'ostiabe';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://ostia.be/blog/2013/01/29/legacy-code/';
+        var disqus_url = 'http://ostia.be/blog/2013/01/29/legacy-code/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

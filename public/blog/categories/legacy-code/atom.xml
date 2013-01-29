@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: testing | Ostia]]></title>
-  <link href="http://ostia.be/blog/categories/testing/atom.xml" rel="self"/>
+  <title><![CDATA[Category: legacy code | Ostia]]></title>
+  <link href="http://ostia.be/blog/categories/legacy-code/atom.xml" rel="self"/>
   <link href="http://ostia.be/"/>
   <updated>2013-01-29T08:23:29+01:00</updated>
   <id>http://ostia.be/</id>
@@ -54,35 +54,6 @@ And if the cure is the same, it must be the same disease, the rest is just polit
 <p>Hence: legacy code is untested code and untested code is legacy code, QED.</p>
 
 <p><em>On a side note: Michael Feathers will be doing a keynote at the <a href="https://twitter.com/JoyOfCoding">@JoyOfCoding</a> conference in Rotterdam (The Netherlands) soon. I doubt I'll be able to make it there, my family's got a major release coming up. But do check it out, <a href="http://joyofcoding.org">the program</a> is well worth it!</em></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[play 2 JUnit runner]]></title>
-    <link href="http://ostia.be/blog/2012/10/22/play-2-test-runner/"/>
-    <updated>2012-10-22T17:38:00+02:00</updated>
-    <id>http://ostia.be/blog/2012/10/22/play-2-test-runner</id>
-    <content type="html"><![CDATA[<p>I like Play 2. It's simply the best thing that happened on the JVM since, well, Play 1 :)</p>
-
-<p>One thing bothers me though: testing is still a bit of a PITA (at least in Java). Sure, Play 2 has webdriver support, you don't have to extend <code>UnitTest</code> and <code>FunctionalTest</code> anymore and you can unit-test templates. But, instead of extending base test classes I have to call a bunch of static utility methods on the <code>play.test.Helpers</code> class.</p>
-
-<p>For example, to write a test that runs inside an application (i.e. has access to its environment), I have to write the following:</p>
-
-<script src="https://gist.github.com/3917715.js?file=BeforeOrganisationTest.java"></script>
-
-
-<p>In his excellent <a href="http://blog.matthieuguillermin.fr/2012/03/unit-testing-tricks-for-play-2-0-and-ebean/">blog post</a>, Matthieu Guillermin (<a href="https://twitter.com/MGuillermin">@mguillermin</a>) shows a solution for this problem (amongs others) by creating an abstract base class that contains the boilerplate code.
-This works very well, but I prefer composition over inheritance, so I'm using a custom JUnit runner for this.</p>
-
-<script src="https://gist.github.com/3917715.js?file=PlayJUnitRunner.java"></script>
-
-
-<p>Then, you can use this runner in an <code>@runWith</code> annotation, and just write your test code without wrapping it in a <code>Runnable</code>, like so:</p>
-
-<script src="https://gist.github.com/3917715.js?file=AfterOrganisationTest.java"></script>
-
-
-<p>Until next time!</p>
 ]]></content>
   </entry>
   

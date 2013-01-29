@@ -7,7 +7,7 @@ categories:
 - legacy code 
 - TDD
 - testing
-published: false
+published: true
 ---
 
 Until recently, I used the term *legacy code* for bad, ancient code that had been written ten consultants ago, for code that has stopped evolving because it's too complicated and critical that nobody dares to take responsibility, for code that came from someone else, you get the idea. We've all seen that code and we all love to hate that consultant, don't we. 
