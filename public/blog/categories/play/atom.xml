@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Play | Ostia]]></title>
   <link href="http://ostia.be/blog/categories/play/atom.xml" rel="self"/>
   <link href="http://ostia.be/"/>
-  <updated>2013-01-29T08:25:38+01:00</updated>
+  <updated>2013-02-15T23:35:12+01:00</updated>
   <id>http://ostia.be/</id>
   <author>
     <name><![CDATA[Ben Verbeken]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[play 2 JUnit runner]]></title>
-    <link href="http://ostia.be/blog/2012/10/22/play-2-test-runner/"/>
-    <updated>2012-10-22T17:38:00+02:00</updated>
-    <id>http://ostia.be/blog/2012/10/22/play-2-test-runner</id>
+    <link href="http://ostia.be/blog/2012/10/20/play-2-test-runner/"/>
+    <updated>2012-10-20T17:38:00+02:00</updated>
+    <id>http://ostia.be/blog/2012/10/20/play-2-test-runner</id>
     <content type="html"><![CDATA[<p>I like Play 2. It's simply the best thing that happened on the JVM since, well, Play 1 :)</p>
 
 <p>One thing bothers me though: testing is still a bit of a PITA (at least in Java). Sure, Play 2 has webdriver support, you don't have to extend <code>UnitTest</code> and <code>FunctionalTest</code> anymore and you can unit-test templates. But, instead of extending base test classes I have to call a bunch of static utility methods on the <code>play.test.Helpers</code> class.</p>

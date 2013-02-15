@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>First! - Ostia</title>
+  <title>play 2 JUnit runner - Ostia</title>
   <meta name="author" content="Ben Verbeken">
 
   
-  <meta name="description" content="println("Hello World!") First blog post, yay! Now with that out of the way, go ahead and read the second post. That&#8217;ll be a more interesting, I &hellip;">
+  <meta name="description" content="I like Play 2. It&#8217;s simply the best thing that happened on the JVM since, well, Play 1 :) One thing bothers me though: testing is still a bit &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://ostia.be/blog/2012/08/28/first/">
+  <link rel="canonical" href="http://ostia.be/blog/2012/10/20/play-2-test-runner/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -88,7 +88,7 @@
   <header>
     
       
-        <h1 class="entry-title">First!</h1>
+        <h1 class="entry-title">Play 2 JUnit Runner</h1>
       
     
     
@@ -105,7 +105,7 @@
   
 
 
-<time datetime="2012-08-28T13:43:00+02:00" pubdate data-updated="true">Aug 28<span>th</span>, 2012</time>
+<time datetime="2012-10-20T17:38:00+02:00" pubdate data-updated="true">Oct 20<span>th</span>, 2012</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -114,12 +114,27 @@
   </header>
 
 
-<div class="entry-content"><pre><code>println("Hello World!")
-</code></pre>
+<div class="entry-content"><p>I like Play 2. It&#8217;s simply the best thing that happened on the JVM since, well, Play 1 :)</p>
 
-<p>First blog post, yay!</p>
+<p>One thing bothers me though: testing is still a bit of a PITA (at least in Java). Sure, Play 2 has webdriver support, you don&#8217;t have to extend <code>UnitTest</code> and <code>FunctionalTest</code> anymore and you can unit-test templates. But, instead of extending base test classes I have to call a bunch of static utility methods on the <code>play.test.Helpers</code> class.</p>
 
-<p>Now with that out of the way, go ahead and read the second post. That&#8217;ll be a more interesting, I promise.</p>
+<p>For example, to write a test that runs inside an application (i.e. has access to its environment), I have to write the following:</p>
+
+<script src="https://gist.github.com/3917715.js?file=BeforeOrganisationTest.java"></script>
+
+
+<p>In his excellent <a href="http://blog.matthieuguillermin.fr/2012/03/unit-testing-tricks-for-play-2-0-and-ebean/">blog post</a>, Matthieu Guillermin (<a href="https://twitter.com/MGuillermin">@mguillermin</a>) shows a solution for this problem (amongs others) by creating an abstract base class that contains the boilerplate code.
+This works very well, but I prefer composition over inheritance, so I&#8217;m using a custom JUnit runner for this.</p>
+
+<script src="https://gist.github.com/3917715.js?file=PlayJUnitRunner.java"></script>
+
+
+<p>Then, you can use this runner in an <code>@runWith</code> annotation, and just write your test code without wrapping it in a <code>Runnable</code>, like so:</p>
+
+<script src="https://gist.github.com/3917715.js?file=AfterOrganisationTest.java"></script>
+
+
+<p>Until next time!</p>
 </div>
 
 
@@ -142,15 +157,21 @@
   
 
 
-<time datetime="2012-08-28T13:43:00+02:00" pubdate data-updated="true">Aug 28<span>th</span>, 2012</time>
+<time datetime="2012-10-20T17:38:00+02:00" pubdate data-updated="true">Oct 20<span>th</span>, 2012</time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/play/'>Play</a>, <a class='category' href='/blog/categories/tdd/'>TDD</a>, <a class='category' href='/blog/categories/junit/'>junit</a>, <a class='category' href='/blog/categories/testing/'>testing</a>
+  
+</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ostia.be/blog/2012/08/28/first/" data-via="bverbeken" data-counturl="http://ostia.be/blog/2012/08/28/first/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ostia.be/blog/2012/10/20/play-2-test-runner/" data-via="bverbeken" data-counturl="http://ostia.be/blog/2012/10/20/play-2-test-runner/" >Tweet</a>
   
   
   
@@ -161,8 +182,10 @@
     
     <p class="meta">
       
+        <a class="basic-alignment left articlenav" href="/blog/2012/10/04/dojo/" title="Previous Post: Dojo">&laquo; Dojo</a>
       
-        <a class="basic-alignment right articlenav" href="/blog/2012/08/29/totestornottotest/" title="Next Post: To Test Or Not To Test">To Test Or Not To Test &raquo;</a>
+      
+        <a class="basic-alignment right articlenav" href="/blog/2012/11/14/devoxx-university/" title="Next Post: Devoxx University highlights">Devoxx University highlights &raquo;</a>
       
     </p>
   </footer>
@@ -283,8 +306,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://ostia.be/blog/2012/08/28/first/';
-        var disqus_url = 'http://ostia.be/blog/2012/08/28/first/';
+        var disqus_identifier = 'http://ostia.be/blog/2012/10/20/play-2-test-runner/';
+        var disqus_url = 'http://ostia.be/blog/2012/10/20/play-2-test-runner/';
         var disqus_script = 'embed.js';
       
     (function () {
