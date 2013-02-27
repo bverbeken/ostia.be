@@ -90,7 +90,7 @@ We know we like Play 1 a lot. Being a java framework, it's right in our comfort 
 We love the statelessness of the framework; development is really fast thanks to hit-F5-and-it's-there, and it makes it easy to deploy to the cloud. Furthermore, the learning curve is flat, because of the simple conventions and known technologies under the hood (hibernate, for one).   
 On the testing side, things could be improved. Either we don't really understand how we should test a stateless web app (lack of knowledge), or Play 1 lacks the tools to do so. The fact that there's so much static things going on doesn't help, but not a major hurdle. 
 
-Play 2 is a different story. The main ideas we knew from Play 1 are there (statelesness, the routes file, the MVC approach), but there are just too many things to learn to make it easy to use right away. We didn't like EBean, and struggled with the compiled templates and sbt, both of which feel very un-java-like (I hear you thinking: Duh, of course they do. More on that below ;)).   
+Play 2 is a different story. The main ideas we knew from Play 1 are there (statelessness, the routes file, the MVC approach), but there are just too many things to learn to make it easy to use right away. We didn't like EBean, and struggled with the compiled templates and sbt, both of which feel very un-java-like (I hear you thinking: Duh, of course they do. More on that below ;)).   
 
 All in all, we now know what Playframework can do for us, there's definitely value there, but Play 2 with Java just doesn't feel right to us.   
 Or, as someone put it: "We should fork Play 1" (which btw has been [done](http://www.github.com/yalpframework/yalp) by now).
