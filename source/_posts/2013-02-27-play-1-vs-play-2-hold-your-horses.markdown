@@ -18,7 +18,7 @@ Since about a year, I've been in charge of the [Playframework](http://www.playfr
 
 What we did
 -----------
-We held 6 sessions throughout the year, during which we built an application from scratch. The app, *Hold Your Horses* (<http://holdyourhorses.herokuapp.com/>), is a horse race simulation game in which players can buy and sell horses, build stables, buy food, hire trainers, participate in races, win money, you name it.    
+We held 6 sessions throughout the year, during which we built an application from scratch. The app, *Hold Your Horses* (<https://github.com/cegekaplaycc/>), is a horse race simulation game in which players can buy and sell horses, build stables, buy food, hire trainers, participate in races, win money, you name it.    
 In fact, we built *Hold Your Horses* twice, and here's the interesting part: we evaluated both Play 1 (4 sessions) and Play 2 with java (2 sessions).     
 When we held the first session back in January 2012, Play 2 had been announced and an RC was available, but the documentation wasn't there yet. So we decided to go with Play 1 for starters and to switch to Play 2 after a few sessions. This would give us the opportunity to compare the two and decide for ourselves. 
 

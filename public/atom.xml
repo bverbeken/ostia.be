@@ -4,7 +4,7 @@
   <title><![CDATA[Ostia]]></title>
   <link href="http://ostia.be/atom.xml" rel="self"/>
   <link href="http://ostia.be/"/>
-  <updated>2013-02-27T21:51:54+01:00</updated>
+  <updated>2013-02-27T22:35:53+01:00</updated>
   <id>http://ostia.be/</id>
   <author>
     <name><![CDATA[Ben Verbeken]]></name>
@@ -30,7 +30,7 @@ Since about a year, I&#8217;ve been in charge of the <a href="http://www.playfra
 
 <h2>What we did</h2>
 
-<p>We held 6 sessions throughout the year, during which we built an application from scratch. The app, <em>Hold Your Horses</em> (<a href="http://holdyourhorses.herokuapp.com/">http://holdyourhorses.herokuapp.com/</a>), is a horse race simulation game in which players can buy and sell horses, build stables, buy food, hire trainers, participate in races, win money, you name it.  <br/>
+<p>We held 6 sessions throughout the year, during which we built an application from scratch. The app, <em>Hold Your Horses</em> (<a href="https://github.com/cegekaplaycc/">https://github.com/cegekaplaycc/</a>), is a horse race simulation game in which players can buy and sell horses, build stables, buy food, hire trainers, participate in races, win money, you name it.  <br/>
 In fact, we built <em>Hold Your Horses</em> twice, and here&#8217;s the interesting part: we evaluated both Play 1 (4 sessions) and Play 2 with java (2 sessions).   <br/>
 When we held the first session back in January 2012, Play 2 had been announced and an RC was available, but the documentation wasn&#8217;t there yet. So we decided to go with Play 1 for starters and to switch to Play 2 after a few sessions. This would give us the opportunity to compare the two and decide for ourselves.</p>
 
