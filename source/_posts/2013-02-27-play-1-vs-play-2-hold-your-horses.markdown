@@ -3,7 +3,7 @@ layout: post
 title: "Play 1 vs Play 2: Hold Your Horses"
 date: 2013-02-27 21:48
 categories: playframework cegeka TDD agile java scala 
-categories: 
+comments: true
 ---
 
 I work for Cegeka, a company that's proud of not being the regular type of body-shopping consulting firm. Instead, they put together teams of highly skilled, agile-minded people and sell those to clients as a whole. Needless to say I like it there. 
